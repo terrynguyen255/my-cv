@@ -11,7 +11,8 @@ const me = {
         place: '458/17 Huynh Tan Phat Street, District 7, HCMC',
         facebook: 'xxxxxxxxxxxxxxxxxxxxxxxx',
         github: 'xxxxxxxxxxxxxxxxxxxxxxxx',
-    }
+    },
+    avatar: `${process.env.PUBLIC_URL}/images/avatar.png`
 }
 
 class App extends Component {
@@ -21,8 +22,7 @@ class App extends Component {
               <div className="row section-light">
                   <div className="col-3">
                       <div className="avatar-container">
-                          <img
-                              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQP2nkHA8F5_QHbZVpaLFZoHZPw_vAOxhBifk0C7BOcvxV3MaGpuw"/>
+                          <img src={me.avatar}/>
                       </div>
                   </div>
                   <div className="col-9">
