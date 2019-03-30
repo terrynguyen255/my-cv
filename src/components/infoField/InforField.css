@@ -3,9 +3,11 @@
     float: left;
 
 }
+
 .info-field-icon-container > img {
     width: 100%;
 }
+
 .info-field-icon-value {
     float: left;
     margin-left: 0.7rem;

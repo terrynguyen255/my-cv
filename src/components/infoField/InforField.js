@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import './InforField.css'
 
 export class InfoField extends Component {
@@ -16,7 +16,7 @@ export class InfoField extends Component {
     }
 }
 
-const _getIconPath = (type)=>{
+const _getIconPath = (type) => {
     if (type === 'dob') return `${process.env.PUBLIC_URL}/images/icon-dob.png`
     if (type === 'email') return `${process.env.PUBLIC_URL}/images/icon-email.png`
     if (type === 'idCard') return `${process.env.PUBLIC_URL}/images/icon-id-card.png`

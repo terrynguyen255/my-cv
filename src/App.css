@@ -1,71 +1,80 @@
 hr {
-  border: 1px solid #008dd7!important;
+    border: 1px solid #008dd7 !important;
 }
-.main {
-  width: 70vw;
-  background: #dbe5f1;
-  padding: 2.5rem 0;
-}
-.section-light {
-  background: #dbe5f1;
-  margin: 0.6rem 0 0.6rem 0;
-  padding: 0.6rem 0 0.6rem 0;
-  font-family: "Quicksand";
-}
-.section-dark {
-  background: #365f91;
-  color: white;
-  margin: 0.6rem 0 0.6rem 0;
-  padding: 0.6rem 0 0.6rem 0;
-  font-family: "Quicksand";
-}
-.name {
-  color: #365f91;
-  font-family: "Open Sans";
-  font-weight: 900;
-  font-size: 2.5rem;
-  text-align: center;
 
-  transform: scaleX(2.5);
+.main {
+    width: 70vw;
+    background: #dbe5f1;
+    padding: 2.5rem 0;
 }
+
+.section-light {
+    background: #dbe5f1;
+    margin: 0.6rem 0 0.6rem 0;
+    padding: 0.6rem 0 0.6rem 0;
+    font-family: "Quicksand";
+}
+
+.section-dark {
+    background: #365f91;
+    color: white;
+    margin: 0.6rem 0 0.6rem 0;
+    padding: 0.6rem 0 0.6rem 0;
+    font-family: "Quicksand";
+}
+
+.name {
+    color: #365f91;
+    font-family: "Open Sans";
+    font-weight: 900;
+    font-size: 2.5rem;
+    text-align: center;
+
+    transform: scaleX(2.5);
+}
+
 .title {
-  color: #5b9bd5;
-  font-family: "Courier New";
-  font-weight: 900;
-  font-size: 0.75rem;
-  text-align: right;
-  margin-right: 3.2rem;
+    color: #5b9bd5;
+    font-family: "Courier New";
+    font-weight: 900;
+    font-size: 0.75rem;
+    text-align: right;
+    margin-right: 3.2rem;
 }
+
 .avatar-container {
-  width: 200px;
-  margin: auto;
+    width: 200px;
+    margin: auto;
 }
+
 .avatar-container > img {
-  width: 100%;
-  border-radius: 50%;
+    width: 100%;
+    border-radius: 50%;
 
 }
 
 .section-tag {
-  background: #008dd7;
-  width: 15.7rem;
-  height: 3.2rem;
-  border-radius: 0.6rem;
+    background: #008dd7;
+    width: 15.7rem;
+    height: 3.2rem;
+    border-radius: 0.6rem;
 }
-.section-tag h3{
-  font-family: "Baloo Chettan";
-  text-align: center;
-  line-height: 3.2rem;
-  color: #d8e2f1;
+
+.section-tag h3 {
+    font-family: "Baloo Chettan";
+    text-align: center;
+    line-height: 3.2rem;
+    color: #d8e2f1;
 }
 
 .point {
-  width: 1.25rem;
-  height: 1.25rem;
-  background: #a4a4a4;
-  border-radius: 50%;
-  pointer-events: none;
+    width: 1.25rem;
+    height: 1.25rem;
+    background: #a4a4a4;
+    border-radius: 50%;
+    pointer-events: none;
 }
+
 .point-on {
-  background: #f3cf41;
+    background: #f3cf41;
 }
