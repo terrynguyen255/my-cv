@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import './App.css';
 import {InfoField} from "./components/infoField/InforField";
+import {Skill} from "./components/skill/Skill";
 
 const me = {
     commonInfo: {
@@ -12,7 +13,39 @@ const me = {
         facebook: 'xxxxxxxxxxxxxxxxxxxxxxxx',
         github: 'xxxxxxxxxxxxxxxxxxxxxxxx',
     },
-    avatar: `${process.env.PUBLIC_URL}/images/avatar.png`
+    avatar: `${process.env.PUBLIC_URL}/images/avatar.png`,
+    skills: [
+        {
+            name: 'Multiple page web',
+            points: 8,
+            description: 'HTML, CSS, Javascript',
+        },
+        {
+            name: 'ReactJS',
+            points: 4,
+            description: '',
+        }, {
+            name: 'Python-Flask',
+            points: 6.5,
+            description: '9 months',
+        }, {
+            name: 'NodeJS',
+            points: 7.5,
+            description: '1 year',
+        }, {
+            name: 'PostgreSQL',
+            points: 8,
+            description: '1.5 year',
+        }, {
+            name: 'VC-Git',
+            points: 8,
+            description: '',
+        }, {
+            name: 'English',
+            points: 7,
+            description: 'Intermediate',
+        },
+    ]
 }
 
 class App extends Component {
@@ -68,31 +101,18 @@ class App extends Component {
                                 <div className="section-tag"><h3>MY SKILLS</h3></div>
                             </div>
                         </div>
-                        <div className="row">
-                            <div className="col-2">Skill name</div>
-                            <div className="col-4">
-                                <button className="point point-on"></button>
-                                <button className="point point-on"></button>
-                                <button className="point point-on"></button>
-                                <button className="point point-on"></button>
-                                <button className="point point-on"></button>
-                                <button className="point point-on"></button>
-                                <button className="point point-on"></button>
-                                <button className="point"></button>
-                                <button className="point"></button>
-                                <button className="point"></button>
-                            </div>
-                            <div className="col-6">description about the skill</div>
-                        </div>
-                        <div className="row">
-                            <div className="col-2">Skill name</div>
-                            <div className="col-4">points</div>
-                            <div className="col-6">description about the skill</div>
-                        </div>
 
+                        {
+                            me.skills.map(skill => (
+                                <Skill
+                                    name={skill.name}
+                                    points={skill.points}
+                                    description={skill.description}
+                                />
+                            ))
+                        }
                     </div>
                 </div>
-
 
                 <div className="row section-light">
                     <div className="col-12">

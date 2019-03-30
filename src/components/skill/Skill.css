@@ -1,0 +1,16 @@
+.point {
+    width: 1.25rem;
+    height: 1.25rem;
+    background: #a4a4a4;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0.1rem;
+}
+
+.point-half {
+    background: linear-gradient(to right,  #f3cf41 50%, #a4a4a4 0%);
+}
+
+.point-full {
+    background: #f3cf41;
+}
