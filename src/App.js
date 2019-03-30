@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import './App.css';
 import {InfoField} from "./components/infoField/InforField";
 import {Skill} from "./components/skill/Skill";
+import {UnorderList} from "./components/unorderList/UnorderList";
 
 const me = {
     commonInfo: {
@@ -45,6 +46,20 @@ const me = {
             points: 7,
             description: 'Intermediate',
         },
+    ],
+    strengths: [
+        'High sense of responsibility',
+        'Hard-working',
+        'Good communication and team-working',
+        'Following processes and coding-conventions consciously',
+        'Ability to work in a high pressure environment',
+        'Reading documents in English fairly',
+    ],
+    hobbies: [
+        'Reading books of literature, sciences and psychology',
+        'Fishing',
+        'Making some handmade things',
+        'Fixing things',
     ]
 }
 
@@ -117,36 +132,16 @@ class App extends Component {
                 <div className="row section-light">
                     <div className="col-12">
                         <div className="row">
-                            <div className="col-6">
+                            <div className="col-12">
                                 <div className="section-tag"><h3>MY STRENGTHS</h3></div>
-                                <ul>
-                                    <li>High sense of responsibility</li>
-                                    <li>Hard-working</li>
-                                    <li>Good communication and team-working</li>
-                                </ul>
-                            </div>
-                            <div className="col-6">
-                                <ul>
-                                    <li>Following processes and coding-conventions consciously</li>
-                                    <li>Ability to work in a high pressure environment</li>
-                                    <li>Reading documents in English fairly</li>
-                                </ul>
+                                <UnorderList list={me.strengths} columns={2}/>
                             </div>
                         </div>
                         <hr/>
                         <div className="row">
-                            <div className="col-6">
+                            <div className="col-12">
                                 <div className="section-tag"><h3>MY HOBBIES</h3></div>
-                                <ul>
-                                    <li>Reading books of literature, sciences and psychology</li>
-                                </ul>
-                            </div>
-                            <div className="col-6">
-                                <ul>
-                                    <li>Fishing</li>
-                                    <li>Making some handmade things</li>
-                                    <li>Fixing things</li>
-                                </ul>
+                                <UnorderList list={me.hobbies} columns={2}/>
                             </div>
                         </div>
                     </div>
