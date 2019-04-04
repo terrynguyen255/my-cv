@@ -80,6 +80,10 @@ export const ProjectStackType = {
         name: 'Sentry',
         logo: `${process.env.PUBLIC_URL}/images/stack-sentry.png`,
     },
+    SENGRID: {
+        name: 'Sengrid',
+        logo: `${process.env.PUBLIC_URL}/images/stack-sendgrid.png`,
+    },
     // xxx: {
     //     name: '',
     //     logo: `${process.env.PUBLIC_URL}/images/xxxxxxxxx`,
