@@ -82,7 +82,7 @@ export class Project extends Component {
                         <p><b>Photos:</b></p>
                         <div className='row'>
                             <div className='col-12'>
-                                <PhotoCarousel items={photos}/>
+                                <PhotoCarousel maxHeight='50rem' items={photos}/>
                             </div>
                         </div>
                     </ModalBody>

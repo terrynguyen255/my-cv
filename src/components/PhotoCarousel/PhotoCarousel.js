@@ -47,7 +47,10 @@ export class PhotoCarousel extends Component {
 
     render() {
         const { activeIndex } = this.state
-        const { speedSecs } = this.props
+        const {
+            speedSecs,
+            maxHeight
+        } = this.props
         
         
         const carouselItems = this.props.items.map(photo => (
@@ -75,8 +78,12 @@ export class PhotoCarousel extends Component {
                             transition: transform ${speedSecs} ease-in-out,-webkit-transform ${speedSecs} ease-in-out;
                         }
                         .carousel-item-custom img{
-                            width: 100%;
-                            height: auto;
+                            width: auto;
+                            max-width: 100%;
+                            max-height: ${maxHeight};
+                            margin-left: auto;
+                            margin-right: auto;
+                            display: block;
                             border: solid 0.05rem #ccc;
                         }
                         .carousel-indicator-custom li {
@@ -99,6 +106,7 @@ export class PhotoCarousel extends Component {
                     `}
                 </style>
                 <Carousel
+                    className='carousel-slide-custom'
                     activeIndex={activeIndex}
                     next={this.next}
                     previous={this.previous}
@@ -119,5 +127,6 @@ export class PhotoCarousel extends Component {
 }
 
 PhotoCarousel.defaultProps = {
-    speedSecs: 8
+    speedSecs: 8,
+    maxHeight: '500px'
 }

@@ -123,11 +123,11 @@ class App extends Component {
                     <div className="col-12">
                         <div className="section-tag"><h3>MY PROJECTS</h3></div>
                     </div>
-                    <div className="col-4">
-                        {
-                            projects.map(p => <Project project={p}/>)
-                        }
-                    </div>
+                    {
+                        projects.map(p => (
+                            <div className="col-2" style={{paddingRight: 0}}><Project project={p}/></div>
+                        ))
+                    }
                 </div>
 
                 <div className="row">

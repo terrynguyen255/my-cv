@@ -1,12 +1,11 @@
 .project-avatar {
     float: left;
-    margin-right: 0.5rem;
 }
 .project-avatar:hover {
 }
 
 .project-logo-container {
-    width: 6rem;
+    max-width: 6rem;
     margin: auto;
     /*float: left;*/
 }
@@ -21,7 +20,5 @@
 }
 .modal-title p {
     margin-bottom: 0;
-    /*margin-left: 1rem;*/
-    /*float: left;*/
 }
 
