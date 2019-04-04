@@ -24,6 +24,7 @@ export class Project extends Component {
             name,
             logo,
             about,
+            status,
             stacks,
             teamSize,
             myRoles,
@@ -65,6 +66,7 @@ export class Project extends Component {
                     <ModalBody>
                         <p><b>About:</b> {about}</p>
                         <p><b>Team size:</b> {teamSize} members</p>
+                        <p><b>Status:</b> {status}</p>
                         <p><b>Stacks:</b></p>
                         <div className='row' style={{margin:0}}>
                             {

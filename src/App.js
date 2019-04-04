@@ -125,7 +125,7 @@ Home Ground is a new platform that targets Sports Businesses. Home Ground is ini
 While we’re starting with just sports clubs & halls, eventually Home Ground would even support advertisers, sports brands & shops. Home Ground will include public APIs that developers can integrate with to provide customised software or apps to Sports businesses.  For example, a smart lock device can integrate with APIs to allow unlocking of tennis courts from phones based on the bookings.
 Home Ground is also intended to be used by clubs worldwide. With the above factors in mind, it’s important to design Home Ground to support multi tenancy, localisation from the beginning. In addition to that, it’s important do design the architecture such that modules can be added incrementally by us internally & also be 3rd party developers in future.
 `,
-            status: 'Launching production',
+            status: 'Production',
             stacks: [
                 ProjectStackType.NODEJS,
                 ProjectStackType.POSGRESQL,
