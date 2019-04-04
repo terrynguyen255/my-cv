@@ -126,6 +126,30 @@ Home Ground is also intended to be used by clubs worldwide. With the above facto
                 src:`${process.env.PUBLIC_URL}/images/project-rovo-photo-9.png`
             },
         ],
+    }, {
+        name: 'Chợ tin tức (News market)',
+        logo: `${process.env.PUBLIC_URL}/images/project-htvNews-logo.png`,
+        owner: 'HTV Technology Media Services Ltd.',
+        about: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec arcu suscipit, mattis leo nec, commodo odio. Phasellus imperdiet risus ut tristique hendrerit. Quisque elementum eu neque a rhoncus. Etiam eget nisi aliquet, pellentesque odio nec, imperdiet mauris. Phasellus sapien felis, volutpat non eros vel, consectetur tempor dui. In id dui a urna congue gravida. Morbi dignissim leo nec magna pulvinar hendrerit. Vivamus ultricies ultricies finibus. Etiam feugiat commodo aliquet. Nullam facilisis ut magna quis scelerisque. Proin laoreet nisi a massa volutpat, et condimentum nibh volutpat.`,
+        status: 'Beta',
+        stacks: [
+            ProjectStackType.NODEJS,
+            ProjectStackType.POSGRESQL,
+            ProjectStackType.SENTRY,
+            ProjectStackType.SENGRID,
+            ProjectStackType.SWIFT,
+            ProjectStackType.KOTLIN,
+            ProjectStackType.REACT,
+            ProjectStackType.SLACK,
+        ],
+        teamSize: 3,
+        myRoles: [{
+            name: 'Backend developer',
+            description: ''
+        }],
+        from: moment('2018-11-01'),
+        to: moment(),
+        photos: [],
     },
     {
         name: 'Lịch HTV (Calendar for HTV TV channel)',
@@ -177,7 +201,6 @@ Home Ground is also intended to be used by clubs worldwide. With the above facto
             },
         ],
     },
-
     // {
     //     name: '',
     //     logo: `${process.env.PUBLIC_URL}/images/project-xxx-logo.png`,
