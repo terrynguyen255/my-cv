@@ -76,6 +76,10 @@ export const ProjectStackType = {
         name: 'Basecamp',
         logo: `${process.env.PUBLIC_URL}/images/stack-basecamp.png`,
     },
+    SENTRY: {
+        name: 'Sentry',
+        logo: `${process.env.PUBLIC_URL}/images/stack-sentry.png`,
+    },
     // xxx: {
     //     name: '',
     //     logo: `${process.env.PUBLIC_URL}/images/xxxxxxxxx`,
