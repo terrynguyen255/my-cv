@@ -7,6 +7,7 @@ import {
 } from 'reactstrap'
 import {ProjectStack} from "../projectStack/ProjectStack";
 import {PhotoCarousel} from "../PhotoCarousel/PhotoCarousel";
+const moment = require('moment')
 
 const DATE_FORMAT = 'DD-MMM-YYYY'
 
@@ -20,26 +21,16 @@ export class Project extends Component {
     }
 
     render() {
-        const {
-            name,
-            logo,
-            about,
-            status,
-            stacks,
-            teamSize,
-            myRoles,
-            from,
-            to,
-            photos,
-        } = this.props.project
-        const durationMonths = to.diff(from, 'months')
+        const project = this.props.project
+        const durationMonths = project.to.diff(project.from, 'months')
+        const projectToDiffToday = moment().diff(project.to, 'days')
 
         return (
             <div
                 className='project-avatar'
                 onClick={this.toggleDetailDialog}
             >
-                <div className='project-logo-container'><img src={logo}/></div>
+                <div className='project-logo-container'><img src={project.logo}/></div>
 
                 <Modal
                     isOpen={this.state.detailOpened}
@@ -49,28 +40,28 @@ export class Project extends Component {
                     <ModalHeader toggle={this.toggleDetailDialog}>
                         <div className='row'>
                             <div className='col-2'>
-                                <div className='project-logo-container'><img src={logo}/></div>
+                                <div className='project-logo-container'><img src={project.logo}/></div>
                             </div>
                             <div className='col-10'>
-                                <p>{name}</p>
+                                <p>{project.name}</p>
                                 <p>
-                                    <b>Duration:</b>&nbsp;
-                                    {durationMonths} months ({from.format(DATE_FORMAT)} - {to.format(DATE_FORMAT)})</p>
+                                    <b>Duration: </b>
+                                    {durationMonths} months ({project.from.format(DATE_FORMAT)} - { projectToDiffToday === 0 ? 'present' : project.to.format(DATE_FORMAT)})</p>
                                 <p>
-                                    <b>My role{myRoles.length > 1 ? 's' : ''}:</b>&nbsp;
-                                    { myRoles.map(role => role.name).join(', ') }
+                                    <b>My role{project.myRoles.length > 1 ? 's' : ''}: </b>
+                                    { project.myRoles.map(role => role.name).join(', ') }
                                 </p>
                             </div>
                         </div>
                     </ModalHeader>
                     <ModalBody>
-                        <p className='project-about'><b>About:</b> {about}</p>
-                        <p><b>Team size:</b> {teamSize} members</p>
-                        <p><b>Status:</b> {status}</p>
+                        <p className='project-about'><b>About:</b> {project.about}</p>
+                        <p><b>Team size:</b> {project.teamSize} members</p>
+                        <p><b>Status:</b> {project.status}</p>
                         <p><b>Stacks:</b></p>
                         <div className='row' style={{margin:0}}>
                             {
-                                stacks.map(stack => {
+                                project.stacks.map(stack => {
                                     return (
                                         <div className='col-1' style={{margin:0, padding:0}}>
                                             <ProjectStack stack={stack}/>
@@ -79,12 +70,23 @@ export class Project extends Component {
                                 })
                             }
                         </div>
-                        <p><b>Photos:</b></p>
-                        <div className='row'>
-                            <div className='col-12'>
-                                <PhotoCarousel maxHeight='50rem' items={photos}/>
-                            </div>
-                        </div>
+
+
+                        {
+                            project.photos.length > 0 ?
+                                (
+                                    <div>
+                                        <p><b>Photos:</b></p>
+                                        <div className='row'>
+                                            <div className='col-12'>
+                                                <PhotoCarousel maxHeight='50rem' items={project.photos}/>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                ) : ''
+                        }
+
                     </ModalBody>
                 </Modal>
             </div>
