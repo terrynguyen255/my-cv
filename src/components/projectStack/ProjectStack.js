@@ -84,8 +84,40 @@ export const ProjectStackType = {
         name: 'Sengrid',
         logo: `${process.env.PUBLIC_URL}/images/stack-sendgrid.png`,
     },
+    SINCH: {
+        name: 'Sinch',
+        logo: `${process.env.PUBLIC_URL}/images/stack-sinch.png`,
+    },
+    ONE_SIGNAL: {
+        name: 'One Signal',
+        logo: `${process.env.PUBLIC_URL}/images/stack-oneSignal.png`,
+    },
+    POSTMAN: {
+        name: 'Postman',
+        logo: `${process.env.PUBLIC_URL}/images/stack-postman.png`,
+    },
+    ONE_PAY: {
+        name: 'One Pay',
+        logo: `${process.env.PUBLIC_URL}/images/stack-onePay.png`,
+    },
+    STRIPE_CONNECT: {
+        name: 'Stripe Connect',
+        logo: `${process.env.PUBLIC_URL}/images/stack-stripeConnect.svg`,
+    },
     // xxx: {
     //     name: '',
-    //     logo: `${process.env.PUBLIC_URL}/images/xxxxxxxxx`,
+    //     logo: `${process.env.PUBLIC_URL}/images/stack-xxxx.png`,
+    // },
+    // xxx: {
+    //     name: '',
+    //     logo: `${process.env.PUBLIC_URL}/images/stack-xxxx.png`,
+    // },
+    // xxx: {
+    //     name: '',
+    //     logo: `${process.env.PUBLIC_URL}/images/stack-xxxx.png`,
+    // },
+    // xxx: {
+    //     name: '',
+    //     logo: `${process.env.PUBLIC_URL}/images/stack-xxxx.png`,
     // },
 }

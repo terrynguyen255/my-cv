@@ -7,7 +7,6 @@
 .project-logo-container {
     max-width: 6rem;
     margin: auto;
-    /*float: left;*/
 }
 .project-logo-container > img {
     width: 100%;
@@ -22,3 +21,6 @@
     margin-bottom: 0;
 }
 
+.project-about p {
+    margin: 0;
+}

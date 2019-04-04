@@ -1,4 +1,5 @@
 import {ProjectStackType} from "../components/projectStack/ProjectStack";
+import React from 'react';
 const moment = require('moment')
 
 export const projects = [
@@ -15,6 +16,7 @@ export const projects = [
             ProjectStackType.DOCKER,
             ProjectStackType.SENTRY,
             ProjectStackType.SENGRID,
+            ProjectStackType.POSTMAN,
             ProjectStackType.SWIFT,
             ProjectStackType.KOTLIN,
             ProjectStackType.REACT,
@@ -66,9 +68,11 @@ Home Ground is also intended to be used by clubs worldwide. With the above facto
             ProjectStackType.NODEJS,
             ProjectStackType.POSGRESQL,
             ProjectStackType.KILLBILL,
+            ProjectStackType.STRIPE_CONNECT,
             ProjectStackType.BULL,
             ProjectStackType.SENTRY,
             ProjectStackType.SENGRID,
+            ProjectStackType.POSTMAN,
             ProjectStackType.SWIFT,
             ProjectStackType.KOTLIN,
             ProjectStackType.REACT,
@@ -126,7 +130,8 @@ Home Ground is also intended to be used by clubs worldwide. With the above facto
                 src:`${process.env.PUBLIC_URL}/images/project-rovo-photo-9.png`
             },
         ],
-    }, {
+    },
+    {
         name: 'Chợ tin tức (News market)',
         logo: `${process.env.PUBLIC_URL}/images/project-htvNews-logo.png`,
         owner: 'HTV Technology Media Services Ltd.',
@@ -137,6 +142,7 @@ Home Ground is also intended to be used by clubs worldwide. With the above facto
             ProjectStackType.POSGRESQL,
             ProjectStackType.SENTRY,
             ProjectStackType.SENGRID,
+            ProjectStackType.POSTMAN,
             ProjectStackType.SWIFT,
             ProjectStackType.KOTLIN,
             ProjectStackType.REACT,
@@ -198,6 +204,115 @@ Home Ground is also intended to be used by clubs worldwide. With the above facto
                 title: 'Creating new event',
                 subTitle: '',
                 src:`${process.env.PUBLIC_URL}/images/project-htvCalendar-photo-8.jpg`
+            },
+        ],
+    },
+    {
+        name: 'Iura',
+        logo: `${process.env.PUBLIC_URL}/images/project-iura-logo.png`,
+        owner: 'Rockship Ltd.',
+        about: (
+            <div>
+                <p>IURA is a pioneering mobile-based application designed to provide end-to-end connectivity solutions between customers and lawyers.</p>
+                <p>Created using the latest and most advanced technology, the outstanding advantages that IURA brings to you are:</p>
+                <ul>
+                    <li>Leading lawyers, professional specialists - with full qualifications, certificates and direct professional practice in 64 provinces - who will give you the most reliable advice.</li>
+                    <li>Clear, transparent, minimized costs and time savings.</li>
+                    <li>Diverse languages of counsel in addition to Vietnamese such as English, French, Chinese, Japanese, ... helping to better facilitate your dialogue.</li>
+                </ul>
+                <p>With IURA, everyone has their own "personal lawyer" anywhere, at any time in a way that cannot be simpler.</p>
+            </div>
+        ),
+        status: 'Production',
+        stacks: [
+            ProjectStackType.PYTHON,
+            ProjectStackType.POSGRESQL,
+            ProjectStackType.SINCH,
+            ProjectStackType.ONE_SIGNAL,
+            ProjectStackType.ONE_PAY,
+            ProjectStackType.SENTRY,
+            ProjectStackType.SENGRID,
+            ProjectStackType.POSTMAN,
+            ProjectStackType.SWIFT,
+            ProjectStackType.KOTLIN,
+            ProjectStackType.SLACK,
+        ],
+        teamSize: 5,
+        myRoles: [{
+            name: 'Backend developer',
+            description: ''
+        }],
+        from: moment('2017-9-9'),
+        to: moment('2018-4-1'),
+        photos: [
+            {
+                title: 'User application',
+                subTitle: 'Choosing desired practice area for a quick call',
+                src:`${process.env.PUBLIC_URL}/images/project-iura-photo-01.jpeg`
+            }, {
+                title: 'User application',
+                subTitle: 'System is finding matched lawyer for the quick call',
+                src:`${process.env.PUBLIC_URL}/images/project-iura-photo-02.jpeg`
+            }, {
+                title: 'User application',
+                subTitle: 'System found a lawyer for the quick call',
+                src:`${process.env.PUBLIC_URL}/images/project-iura-photo-03.jpeg`
+            }, {
+                title: 'User application',
+                subTitle: 'Filtering lawyers',
+                src:`${process.env.PUBLIC_URL}/images/project-iura-photo-04.jpeg`
+            }, {
+                title: 'User application',
+                subTitle: 'Viewing lawyer profile',
+                src:`${process.env.PUBLIC_URL}/images/project-iura-photo-05.jpeg`
+            }, {
+                title: 'Lawyer application',
+                subTitle: 'Home screen',
+                src:`${process.env.PUBLIC_URL}/images/project-iura-photo-06.png`
+            }, {
+                title: 'Lawyer application',
+                subTitle: `Profile management`,
+                src:`${process.env.PUBLIC_URL}/images/project-iura-photo-07.png`
+            }, {
+                title: 'Lawyer application',
+                subTitle: 'Packages management',
+                src:`${process.env.PUBLIC_URL}/images/project-iura-photo-08.png`
+            }, {
+                title: 'Lawyer application',
+                subTitle: 'Package detail',
+                src:`${process.env.PUBLIC_URL}/images/project-iura-photo-09.png`
+            }, {
+                title: 'Lawyer application',
+                subTitle: 'A client is requesting for a quick call',
+                src:`${process.env.PUBLIC_URL}/images/project-iura-photo-10.png`
+            }, {
+                title: 'Lawyer application',
+                subTitle: 'In a quick call',
+                src:`${process.env.PUBLIC_URL}/images/project-iura-photo-11.png`
+            }, {
+                title: 'Lawyer application',
+                subTitle: 'Quick call transaction',
+                src:`${process.env.PUBLIC_URL}/images/project-iura-photo-12.png`
+            }, {
+                title: 'Lawyer application',
+                subTitle: 'Notifications management',
+                src:`${process.env.PUBLIC_URL}/images/project-iura-photo-13.png`
+            }, {
+                title: 'Lawyer application',
+                subTitle: 'Payouts info',
+                src:`${process.env.PUBLIC_URL}/images/project-iura-photo-14.png`
+            }, {
+                title: 'Lawyer application',
+                subTitle: 'Client profile',
+                src:`${process.env.PUBLIC_URL}/images/project-iura-photo-15.png`
+            }, {
+                title: 'Lawyer application',
+                subTitle: 'Engagements management',
+                src:`${process.env.PUBLIC_URL}/images/project-iura-photo-16.png`
+            }, {
+                title: 'Lawyer application',
+                subTitle: 'Quick calls history',
+                src:`${process.env.PUBLIC_URL}/images/project-iura-photo-17.png`
             },
         ],
     },

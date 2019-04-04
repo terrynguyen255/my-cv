@@ -64,7 +64,7 @@ export class Project extends Component {
                         </div>
                     </ModalHeader>
                     <ModalBody>
-                        <p><b>About:</b> {about}</p>
+                        <p className='project-about'><b>About:</b> {about}</p>
                         <p><b>Team size:</b> {teamSize} members</p>
                         <p><b>Status:</b> {status}</p>
                         <p><b>Stacks:</b></p>
