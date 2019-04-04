@@ -3,7 +3,7 @@ hr {
 }
 
 .main {
-    width: 70vw;
+    width: 75vw !important;
     background: #dbe5f1;
     padding: 2.5rem 0;
 }
@@ -43,7 +43,7 @@ hr {
 }
 
 .avatar-container {
-    width: 200px;
+    width: 12.5rem;
     margin: auto;
 }
 
