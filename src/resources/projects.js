@@ -127,20 +127,71 @@ Home Ground is also intended to be used by clubs worldwide. With the above facto
             },
         ],
     },
+    {
+        name: 'Lịch HTV (Calendar for HTV TV channel)',
+        logo: `${process.env.PUBLIC_URL}/images/project-htvCalendar-logo.jpg`,
+        owner: 'HTV Technology Media Services Ltd.',
+        about: '',
+        status: 'Production',
+        stacks: [],
+        teamSize: 2,
+        myRoles: [{
+            name: 'Backend developer',
+            description: ''
+        }],
+        from: moment('2018-09-14'),
+        to: moment('2019-4-4'),
+        photos: [
+            {
+                title: 'Home',
+                subTitle: '',
+                src:`${process.env.PUBLIC_URL}/images/project-htvCalendar-photo-1.jpg`
+            }, {
+                title: 'Program trailer',
+                subTitle: '',
+                src:`${process.env.PUBLIC_URL}/images/project-htvCalendar-photo-2.jpg`
+            }, {
+                title: 'Events',
+                subTitle: '',
+                src:`${process.env.PUBLIC_URL}/images/project-htvCalendar-photo-3.jpg`
+            }, {
+                title: 'Program schedule',
+                subTitle: '',
+                src:`${process.env.PUBLIC_URL}/images/project-htvCalendar-photo-4.jpg`
+            }, {
+                title: 'Calendar',
+                subTitle: '',
+                src:`${process.env.PUBLIC_URL}/images/project-htvCalendar-photo-5.jpg`
+            }, {
+                title: 'Creating new event',
+                subTitle: '',
+                src:`${process.env.PUBLIC_URL}/images/project-htvCalendar-photo-6.jpg`
+            }, {
+                title: 'Creating new event',
+                subTitle: '',
+                src:`${process.env.PUBLIC_URL}/images/project-htvCalendar-photo-7.jpg`
+            }, {
+                title: 'Creating new event',
+                subTitle: '',
+                src:`${process.env.PUBLIC_URL}/images/project-htvCalendar-photo-8.jpg`
+            },
+        ],
+    },
+
     // {
     //     name: '',
-    //     logo: '',
+    //     logo: `${process.env.PUBLIC_URL}/images/project-xxx-logo.png`,
     //     owner: '',
     //     about: '',
     //     status: '',
     //     stacks: [],
-    //     teamSize: '',
-    //     myPositions: [{
+    //     teamSize: 111,
+    //     myRoles: [{
     //         name: '',
     //         description: ''
     //     }],
-    //     from: new Date(),
-    //     to: new Date(),
+    //     from: moment('2018-4-9'),
+    //     to: moment('2018-4-9'),
     //     photos: [
     //         {
     //             title: '',
@@ -148,5 +199,5 @@ Home Ground is also intended to be used by clubs worldwide. With the above facto
     //             src:`${process.env.PUBLIC_URL}/images/project-xxxxx-photo-xxxxxx.xxx`
     //         },
     //     ],
-    // }
+    // },
 ]
