@@ -34,12 +34,12 @@ hr {
 }
 
 .title {
-    color: #5b9bd5;
+    color: #008dd7;
     font-family: "Courier New";
     font-weight: 900;
-    font-size: 0.75rem;
+    font-size: 1rem;
     text-align: right;
-    margin-right: 3.2rem;
+    margin-right: 3.6rem;
 }
 
 .avatar-container {

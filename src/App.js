@@ -14,9 +14,13 @@ const me = {
         email: 'nogias9x@gmail.com',
         idCard: '079.193.004.392',
         phone: '0378.678.349',
-        place: '458/17 Huynh Tan Phat Street, District 7, HCMC',
-        facebook: 'xxxxxxxxxxxxxxxxxxxxxxxx',
-        github: 'xxxxxxxxxxxxxxxxxxxxxxxx',
+        facebook: (<a target='_blank' href='https://www.facebook.com/shinigami.nguyen.1414'>Nguyễn Nhật-Nguyên</a>),
+        github: (<a target='_blank' href='https://github.com/nogias9x'>Nogias9x</a>),
+        place: (
+            <a target='_blank' href='http://tinyurl.com/y6pltt5u'>
+                458/17 Huỳnh Tấn Phát Street, District 7, HCMC
+            </a>
+        ),
     },
     avatar: `${process.env.PUBLIC_URL}/images/avatar.png`,
     strengths: [

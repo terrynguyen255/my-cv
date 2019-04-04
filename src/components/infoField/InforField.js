@@ -7,22 +7,21 @@ export class InfoField extends Component {
 
         return (
             <div className="col-6">
-                <div className="info-field-icon-container">
+                <div className="col-2 info-field-icon-container">
                     <img src={icon}/>
                 </div>
-                <div className="info-field-icon-value">{this.props.value}</div>
+                <div className="col-9 info-field-icon-value">{this.props.value}</div>
             </div>
         )
     }
 }
 
 const _getIconPath = (type) => {
-    if (type === 'dob') return `${process.env.PUBLIC_URL}/images/icon-dob.png`
-    if (type === 'email') return `${process.env.PUBLIC_URL}/images/icon-email.png`
-    if (type === 'idCard') return `${process.env.PUBLIC_URL}/images/icon-id-card.png`
-    if (type === 'phone') return `${process.env.PUBLIC_URL}/images/icon-phone.png`
-    if (type === 'place') return `${process.env.PUBLIC_URL}/images/icon-place.png`
-
-    if (type === 'facebook') return `${process.env.PUBLIC_URL}/images/icon-place.png`
-    if (type === 'github') return `${process.env.PUBLIC_URL}/images/icon-place.png`
+    if (type === 'dob') return `${process.env.PUBLIC_URL}/images/icon-dob.svg`
+    if (type === 'email') return `${process.env.PUBLIC_URL}/images/icon-email.svg`
+    if (type === 'idCard') return `${process.env.PUBLIC_URL}/images/icon-idCard.svg`
+    if (type === 'phone') return `${process.env.PUBLIC_URL}/images/icon-phone.svg`
+    if (type === 'place') return `${process.env.PUBLIC_URL}/images/icon-place.svg`
+    if (type === 'facebook') return `${process.env.PUBLIC_URL}/images/icon-facebook.svg`
+    if (type === 'github') return `${process.env.PUBLIC_URL}/images/icon-github.svg`
 }
