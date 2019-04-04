@@ -133,7 +133,7 @@ Home Ground is also intended to be used by clubs worldwide. With the above facto
                 ProjectStackType.KOTLIN,
                 ProjectStackType.REACT,
                 ProjectStackType.SLACK,
-                // ProjectStackType.BASECAMP,
+                ProjectStackType.BASECAMP,
             ],
             teamSize: 6,
             myRoles: [
