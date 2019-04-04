@@ -7,7 +7,12 @@ export const projects = [
         name: 'Predict It',
         logo: `${process.env.PUBLIC_URL}/images/project-predictit-logo.png`,
         owner: 'Sibyl Entertainment',
-        about: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec arcu suscipit, mattis leo nec, commodo odio. Phasellus imperdiet risus ut tristique hendrerit. Quisque elementum eu neque a rhoncus. Etiam eget nisi aliquet, pellentesque odio nec, imperdiet mauris. Phasellus sapien felis, volutpat non eros vel, consectetur tempor dui. In id dui a urna congue gravida. Morbi dignissim leo nec magna pulvinar hendrerit. Vivamus ultricies ultricies finibus. Etiam feugiat commodo aliquet. Nullam facilisis ut magna quis scelerisque. Proin laoreet nisi a massa volutpat, et condimentum nibh volutpat.`,
+        about: (
+            <div>
+                <p>Predict It is an entertainment application in which players can predicts everything of life.</p>
+                <p>The application has a various ways to motivate to predict more such as points, stars, achievements, trophies, social network sharing, etc.</p>
+            </div>
+        ),
         status: 'Beta',
         stacks: [
             ProjectStackType.PYTHON,
@@ -24,10 +29,15 @@ export const projects = [
             ProjectStackType.TRELLO,
         ],
         teamSize: 7,
-        myRoles: [{
-            name: 'Backend Dev',
-            description: ''
-        }],
+        myRoles: [
+            {
+                name: 'Backend Team Leader',
+                description: ''
+            }, {
+                name: 'Backend Dev',
+                description: ''
+            },
+        ],
         from: moment('2019-1-18'),
         to: moment('2019-3-21'),
         photos: [
@@ -58,11 +68,12 @@ export const projects = [
         name: 'Home Ground',
         logo: `${process.env.PUBLIC_URL}/images/project-rovo-logo.png`,
         owner: 'Rovo',
-        about: `
-Home Ground is a new platform that targets Sports Businesses. Home Ground is initially targeted at clubs or sports halls that have physical facilities such as tennis courts, badminton courts, soccer pitches etc. The premise of Home Ground is to provide all the technology that a club needs to run their business effectively with just 10 minutes of setup. 
-While we’re starting with just sports clubs & halls, eventually Home Ground would even support advertisers, sports brands & shops. Home Ground will include public APIs that developers can integrate with to provide customised software or apps to Sports businesses.  For example, a smart lock device can integrate with APIs to allow unlocking of tennis courts from phones based on the bookings.
-Home Ground is also intended to be used by clubs worldwide. With the above factors in mind, it’s important to design Home Ground to support multi tenancy, localisation from the beginning. In addition to that, it’s important do design the architecture such that modules can be added incrementally by us internally & also be 3rd party developers in future.
-`,
+        about: (
+            <div>
+                <p>Home Ground is a platform that targets Sports Businesses. Home Ground is targeted at clubs or sports halls that have physical facilities such as tennis courts, badminton courts, soccer pitches etc. The premise of Home Ground is to provide all the technology that a club needs to run their business effectively with just 10 minutes of setup.</p>
+                <p>Home Ground is can be used by clubs worldwide. It supports multi tenancy and localisation.</p>
+            </div>
+        ),
         status: 'Production',
         stacks: [
             ProjectStackType.NODEJS,
