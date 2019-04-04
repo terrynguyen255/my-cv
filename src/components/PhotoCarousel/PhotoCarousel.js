@@ -82,6 +82,10 @@ export class PhotoCarousel extends Component {
                         .carousel-indicator-custom li {
                             border: solid 0.05rem black;
                         }
+                        .carousel-indicator-custom .active {
+                            background: black;
+                            opacity: 1;
+                        }
                         .carousel-control-prev-icon {
                             background-image: url('/images/icon-carousel-prev.svg');
                         }
@@ -115,5 +119,5 @@ export class PhotoCarousel extends Component {
 }
 
 PhotoCarousel.defaultProps = {
-    speedSecs: 5
+    speedSecs: 8
 }
