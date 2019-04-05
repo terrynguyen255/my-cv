@@ -89,9 +89,9 @@ class App extends Component {
                             <div className="col-12" style={{paddingLeft: '2rem'}}>
                                 <h5><b>{edu.school}</b></h5>
                                 <div style={{paddingLeft: '2rem'}}>
-                                    From: {edu.from.format('MMM-YYYY')}<br/>
-                                    Major: {edu.degree} in {edu.major}<br/>
-                                    GPA: {edu.gpa}<br/>
+                                    <b>From</b>: {edu.from.format('MMM-YYYY')}<br/>
+                                    <b>Major</b>: {edu.degree} in {edu.major}<br/>
+                                    <b>GPA</b>: {edu.gpa}<br/>
                                 </div>
                             </div>
                         ))
