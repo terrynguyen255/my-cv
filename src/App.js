@@ -6,6 +6,7 @@ import {UnorderList} from "./components/unorderList/UnorderList";
 import {Project} from "./components/project/Project";
 import {projects} from "./resources/projects";
 import {skills} from "./resources/skills";
+import {Avatar} from "./components/avatar/Avatar";
 const moment = require('moment')
 
 
@@ -30,7 +31,13 @@ const me = {
         degree: 'Bachelor of Science',
         gpa: 7.31,
     }],
-    avatar: `${process.env.PUBLIC_URL}/images/avatar.png`,
+    avatar: {
+        src: `${process.env.PUBLIC_URL}/images/avatar.png`,
+        sizeWidth: '160%',
+        sizeHeight: 'auto',
+        positionX: '60%',
+        positionY: '35%',
+    },
     strengths: [
         'High sense of responsibility',
         'Hard-working',
@@ -52,10 +59,8 @@ class App extends Component {
         return (
             <div className="container main">
                 <div className="row section-light">
-                    <div className="col-3">
-                        <div className="avatar-container">
-                            <img src={me.avatar}/>
-                        </div>
+                    <div className="col-3"><
+                        Avatar avatar={me.avatar}/>
                     </div>
                     <div className="col-9">
                         <h1 className="name">TU NGUYEN</h1>
