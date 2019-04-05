@@ -7,6 +7,7 @@ import {
 } from 'reactstrap'
 import {ProjectStack} from "../projectStack/ProjectStack";
 import {PhotoCarousel} from "../PhotoCarousel/PhotoCarousel";
+import ReactTooltip from "react-tooltip";
 const moment = require('moment')
 
 const DATE_FORMAT = 'DD-MMM-YYYY'
@@ -30,7 +31,8 @@ export class Project extends Component {
                 className='project-avatar'
                 onClick={this.toggleDetailDialog}
             >
-                <div className='project-logo-container'><img src={project.logo}/></div>
+                <ReactTooltip id={project.name} type='info'>{project.name}</ReactTooltip>
+                <div className='project-logo-container' data-tip data-for={project.name}><img src={project.logo}/></div>
 
                 <Modal
                     isOpen={this.state.detailOpened}
