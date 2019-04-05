@@ -6,6 +6,7 @@ import {UnorderList} from "./components/unorderList/UnorderList";
 import {Project} from "./components/project/Project";
 import {projects} from "./resources/projects";
 import {skills} from "./resources/skills";
+const moment = require('moment')
 
 
 const me = {
@@ -22,6 +23,13 @@ const me = {
             </a>
         ),
     },
+    educations: [{
+        school: 'University of Science (Viet Nam National University Ho Chi Minh City)',
+        from: moment('2012-09-01'),
+        major: 'Software Engineering',
+        degree: 'Bachelor of Science',
+        gpa: 7.31,
+    }],
     avatar: `${process.env.PUBLIC_URL}/images/avatar.png`,
     strengths: [
         'High sense of responsibility',
@@ -66,6 +74,23 @@ class App extends Component {
                             }
                         </div>
                     </div>
+                </div>
+                <div className="row section-light">
+                    <div className="col-12">
+                        <div className="section-tag"><h3>MY EDUCATION</h3></div>
+                    </div>
+                    {
+                        me.educations.map(edu => (
+                            <div className="col-12" style={{paddingLeft: '2rem'}}>
+                                <h5><b>{edu.school}</b></h5>
+                                <div style={{paddingLeft: '2rem'}}>
+                                    From: {edu.from.format('MMM-YYYY')}<br/>
+                                    Major: {edu.degree} in {edu.major}<br/>
+                                    GPA: {edu.gpa}<br/>
+                                </div>
+                            </div>
+                        ))
+                    }
                 </div>
 
 
