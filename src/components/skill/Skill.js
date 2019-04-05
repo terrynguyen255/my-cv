@@ -16,11 +16,9 @@ export class Skill extends Component {
         }
         return (
             <div className="row">
-                <div className="col-2">{this.props.name}</div>
-                <div className="col-4">
-                    { pointsElements }
-                </div>
-                <div className="col-6">{this.props.description}</div>
+                <div className="col-2" style={{textAlign:'right'}}>{this.props.name}</div>
+                <div className="col-4" style={{padding:0, marginLeft:'-0.3rem'}}>{pointsElements}</div>
+                <div className="col-6" style={{padding:0, marginLeft:'-4rem'}}>{this.props.description}</div>
             </div>
         )
     }
