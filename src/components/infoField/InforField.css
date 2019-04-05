@@ -1,5 +1,6 @@
 .info-field-icon-container {
-    width: 1.5rem;
+    padding: 0 !important;
+    max-width: 1.5rem !important;
     float: left;
 }
 
@@ -10,7 +11,6 @@
 .info-field-icon-value {
     float: left;
     line-height: 1.5rem;
-    padding: 0 !important;
 }
 
 .info-field-icon-value a {

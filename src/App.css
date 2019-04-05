@@ -6,6 +6,17 @@ hr {
     width: 75vw !important;
     background: #dbe5f1;
     padding: 2.5rem 0;
+
+}
+
+@media (max-width: 600px) {
+    .main {
+        width: 100vw !important;
+    }
+    .title {
+        text-align: center !important;
+        margin: auto !important;
+    }
 }
 
 .section-light {
@@ -27,10 +38,8 @@ hr {
     color: #365f91;
     font-family: "Open Sans";
     font-weight: 900;
-    font-size: 2.5rem;
+    font-size: 4rem;
     text-align: center;
-
-    transform: scaleX(2.5);
 }
 
 .title {

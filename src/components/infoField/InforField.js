@@ -6,7 +6,7 @@ export class InfoField extends Component {
         const icon = _getIconPath(this.props.type)
 
         return (
-            <div className="col-6">
+            <div className="col-md-6 col-12">
                 <div className="col-2 info-field-icon-container">
                     <img src={icon}/>
                 </div>

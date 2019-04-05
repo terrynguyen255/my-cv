@@ -1,6 +1,7 @@
 .avatar-container {
-    width: 14rem;
+    max-width: 14rem;
     margin: auto;
+    padding: 0;
 }
 
 .avatar-container > img {

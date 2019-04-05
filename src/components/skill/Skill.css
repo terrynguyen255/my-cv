@@ -14,3 +14,26 @@
 .point-full {
     background: #f3cf41;
 }
+
+@media (max-width: 600px) {
+    .skill-name {
+        text-align: left;
+    }
+    .skill-container {
+        margin-bottom: 1.5rem;
+    }
+}
+
+@media (min-width: 600px) {
+    .skill-name {
+        text-align: right;
+    }
+    .skill-points-bar {
+        padding: 0 !important;;
+        margin-left: -0.3rem;
+    }
+    .skill-description {
+        padding: 0 !important;
+        margin-left: -2rem;
+    }
+}

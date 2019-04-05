@@ -1,8 +1,8 @@
 export const skills = [
     {
-        name: 'Multiple page web app',
+        name: 'MPA',
         points: 8,
-        description: 'HTML, CSS, Javascript',
+        description: 'Server-side rendering with HTML, CSS, Javascript',
     }, {
         name: 'ReactJS',
         points: 4,
@@ -10,11 +10,11 @@ export const skills = [
     }, {
         name: 'Python',
         points: 7,
-        description: '9 months exp with Flask-SqlAlchemy in real projects',
+        description: '9 months exp with Flask-SqlAlchemy',
     }, {
         name: 'NodeJS',
         points: 8.5,
-        description: '1 year exp with Express-Sequelize in real projects',
+        description: '1 year exp with Express-Sequelize',
     }, {
         name: 'OPP',
         points: 7,

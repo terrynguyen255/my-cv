@@ -59,10 +59,10 @@ class App extends Component {
         return (
             <div className="container main">
                 <div className="row section-light">
-                    <div className="col-3"><
+                    <div className="col-md-3"><
                         Avatar avatar={me.avatar}/>
                     </div>
-                    <div className="col-9">
+                    <div className="col-md-9">
                         <h1 className="name">TU NGUYEN</h1>
                         <h1 className="title">BACKEND DEVELOPER</h1>
 
@@ -101,28 +101,21 @@ class App extends Component {
 
                 <div className="row section-dark">
                     <div className="col-12">
-                        <div className="row">
-                            <div className="col-4">
-                                <div className="section-tag"><h3>MY TARGETS</h3></div>
-                            </div>
-                            <div className="col-8">
-                                Within next 2 years, I want to:
-                                <ul>
-                                    <li>Become a senior Website and Android developer</li>
-                                    <li>Use English fluently (100+ TOEFL)</li>
-                                    <li>Be able to lead a team of 4+ developers</li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <hr/>
-
-                        <div className="row">
-                            <div className="col-12">
-                                <div className="section-tag"><h3>MY SKILLS</h3></div>
-                            </div>
-                        </div>
-
+                        <div className="section-tag"><h3>MY TARGETS</h3></div>
+                    </div>
+                    <div className="col-12">
+                        Within next 2 years, I want to:
+                        <ul>
+                            <li>Become a senior Website and Android developer</li>
+                            <li>Use English fluently (100+ TOEFL)</li>
+                            <li>Be able to lead a team of 4+ developers</li>
+                        </ul>
+                    </div>
+                    <div className="col-12"><hr/></div>
+                    <div className="col-12">
+                        <div className="section-tag"><h3>MY SKILLS</h3></div>
+                    </div>
+                    <div className="col-12">
                         {
                             skills.map(skill => (
                                 <Skill
@@ -140,14 +133,14 @@ class App extends Component {
                         <div className="row">
                             <div className="col-12">
                                 <div className="section-tag"><h3>MY STRENGTHS</h3></div>
-                                <UnorderList list={me.strengths} columns={2}/>
+                                <UnorderList list={me.strengths} columns={2} stubborn={false}/>
                             </div>
                         </div>
                         <hr/>
                         <div className="row">
                             <div className="col-12">
                                 <div className="section-tag"><h3>MY HOBBIES</h3></div>
-                                <UnorderList list={me.hobbies} columns={2}/>
+                                <UnorderList list={me.hobbies} columns={2} stubborn={false}/>
                             </div>
                         </div>
                     </div>
@@ -159,7 +152,12 @@ class App extends Component {
                     </div>
                     {
                         projects.map(p => (
-                            <div className="col-2" style={{paddingRight: 0}}><Project project={p}/></div>
+                            <div
+                                className="col-md-2 col-6"
+                                style={{paddingRight: 0, marginBottom: '1rem'}}
+                            >
+                                <Project project={p}/>
+                            </div>
                         ))
                     }
                 </div>
