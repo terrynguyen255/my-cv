@@ -65,3 +65,13 @@ hr {
     line-height: 3.2rem;
     color: #d8e2f1;
 }
+
+.toggle-language-button {
+    float: right;
+    background-size: cover;
+    width: 2rem;
+    height: 1.5rem;
+    border: solid 0.07rem black;
+    border-radius: 0.4rem;
+    margin-right: 0.5rem;
+}

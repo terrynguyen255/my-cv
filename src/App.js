@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import './App.css';
+import { withNamespaces } from 'react-i18next';
 import {InfoField} from "./components/infoField/InforField";
 import {Skill} from "./components/skill/Skill";
 import {UnorderList} from "./components/unorderList/UnorderList";
@@ -54,10 +55,48 @@ const me = {
     ],
 }
 
+const languages = [
+    {
+        code: 'en',
+        flag: `${process.env.PUBLIC_URL}/images/language-en.png`
+    },
+    {
+        code: 'vi',
+        flag: `${process.env.PUBLIC_URL}/images/language-vn.png`
+    }
+]
+
 class App extends Component {
+    constructor(props) {
+        super(props)
+        this.changeLanguage = this.changeLanguage.bind(this)
+        this.state = { currentLanguage: 'en' }
+    }
+
+    changeLanguage (i18n, langCode) {
+        i18n.changeLanguage(langCode);
+        this.setState({currentLanguage: langCode})
+    }
+
     render() {
+        const { t, i18n } = this.props;
+
         return (
             <div className="container main">
+                <div className="row">
+                    <div className="col-12">
+                        {
+                            languages.map(lang => (
+                                <button
+                                    className="toggle-language-button"
+                                    style={{backgroundImage: `url('${lang.flag}')`}}
+                                    onClick={() => this.changeLanguage(i18n, lang.code)}
+                                />
+                            ))
+                        }
+                    </div>
+                </div>
+
                 <div className="row section-light">
                     <div className="col-md-3"><
                         Avatar avatar={me.avatar}/>
@@ -82,7 +121,7 @@ class App extends Component {
                 </div>
                 <div className="row section-light">
                     <div className="col-12">
-                        <div className="section-tag"><h3>MY EDUCATION</h3></div>
+                        <div className="section-tag"><h3>{t('TAG_MY_EDUCATION')}</h3></div>
                     </div>
                     {
                         me.educations.map(edu => (
@@ -172,4 +211,4 @@ class App extends Component {
     }
 }
 
-export default App;
+export default withNamespaces('componentApp')(App);
