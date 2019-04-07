@@ -2,18 +2,41 @@ import {ProjectStackType} from "../components/projectStack/ProjectStack";
 import React from 'react';
 const moment = require('moment')
 
+const ProjectStatus = {
+    BETA: {
+        _en: `Beta`,
+        _vi: `Bản thử nghiệm người dùng mẫu`,
+    },
+    PRODUCTION: {
+        _en: `Production`,
+        _vi: `Đang vận hành trên thị trường`,
+    }
+}
+
 export const projects = [
     {
-        name: 'Predict It',
+        name: 'PREDICT IT',
         logo: `${process.env.PUBLIC_URL}/images/project-predictit-logo.png`,
         owner: 'Sibyl Entertainment',
-        about: (
-            <div>
-                <p>Predict It is an entertainment application in which players can predicts everything of life.</p>
-                <p>The application has a various ways to motivate to predict more such as points, stars, achievements, trophies, social network sharing, etc.</p>
-            </div>
-        ),
-        status: 'Beta',
+        about: {
+            _en: (
+                <div>
+                    <p>PREDICT IT is an entertainment mobile application in which players can try to predict everything of life.</p>
+                    <p>PREDICT IT has a various ways to motivate to predict more such as points, stars, achievements, trophies, leaderboard, social network sharing, etc.</p>
+                    <p>PREDICT IT has content team to assure players only interesting predictions.</p>
+                    <p>PREDICT IT provide admins a console dashboard to make staff, payouts, contents, season, etc. management simpler than ever.</p>
+                </div>
+            ),
+            _vi: (
+                <div>
+                    <p>PREDICT IT là một ứng dụng di động cho người chơi thử tài dự đoán kết quả mọi thứ trong cuộc sống.</p>
+                    <p>PREDICT IT có nhiều tính năng hấp dẫn khuyến khích người chơi như hệ thống điểm thưởng, tiền thưởng, thành tích, cúp thưởng, bảng xếp hạng, chia sẻ qua mạng xả hội,...</p>
+                    <p>PREDICT IT có đội ngũ chịu trách nhiệm nội dung, đảm bảo các chủ đề dự đoán của PREDICT IT đều hấp dẫn và thú vị.</p>
+                    <p>PREDICT IT cung cấp trang công cụ quản lý cho quản trị viên giúp việc quản lý nhân viên, chi trả lương, nội dung, mùa giải,... đơn giản hơn bao giờ hết.</p>
+                </div>
+            ),
+        },
+        status: ProjectStatus.BETA,
         stacks: [
             ProjectStackType.PYTHON,
             ProjectStackType.POSGRESQL,
@@ -32,49 +55,76 @@ export const projects = [
         myRoles: [
             {
                 name: 'Backend Team Leader',
-                description: ''
+                description: ``
             }, {
                 name: 'Backend Dev',
-                description: ''
+                description: ``
             },
         ],
         from: moment('2019-1-18'),
         to: moment('2019-3-21'),
         photos: [
             {
-                title: '',
-                subTitle: 'Choosing interesting categories',
+                title: ``,
+                subTitle: {
+                    _en: `Choosing interesting categories to start`,
+                    _vi: `Lựa chọn các nhóm chủ đề yêu thích để bắt đầu`,
+                },
                 src: `${process.env.PUBLIC_URL}/images/project-predictit-photo-1.jpg`
             }, {
-                title: '',
-                subTitle: 'Viewing new feeds of predictions',
+                title: ``,
+                subTitle: {
+                    _en: `Viewing news feed of predictions`,
+                    _vi: `Xem news feed`,
+                },
                 src: `${process.env.PUBLIC_URL}/images/project-predictit-photo-2.jpg`
             }, {
-                title: '',
-                subTitle: 'Predicting a prediction',
+                title: ``,
+                subTitle: {
+                    _en: `Predicting a prediction`,
+                    _vi: `Tham gia dự đoán chủ đề`,
+                },
                 src: `${process.env.PUBLIC_URL}/images/project-predictit-photo-3.png`
             }, {
-                title: '',
-                subTitle: 'Revealing rate of predicted answers',
+                title: ``,
+                subTitle: {
+                    _en: `Revealing rate of predicted answers`,
+                    _vi: `Xem gợi ý tỉ lệ dự đoán của những người chơi khác`,
+                },
                 src: `${process.env.PUBLIC_URL}/images/project-predictit-photo-4.jpg`
             }, {
-                title: '',
-                subTitle: 'Viewing leaderboard',
+                title: ``,
+                subTitle: {
+                    _en: `Viewing leaderboard`,
+                    _vi: `Xem leaderboard`,
+                },
                 src: `${process.env.PUBLIC_URL}/images/project-predictit-photo-5.jpg`
             },
         ],
     },
     {
-        name: 'Home Ground',
+        name: 'HOME GROUND',
         logo: `${process.env.PUBLIC_URL}/images/project-rovo-logo.png`,
         owner: 'Rovo',
-        about: (
-            <div>
-                <p>Home Ground is a platform that targets Sports Businesses. Home Ground is targeted at clubs or sports halls that have physical facilities such as tennis courts, badminton courts, soccer pitches etc. The premise of Home Ground is to provide all the technology that a club needs to run their business effectively with just 10 minutes of setup.</p>
-                <p>Home Ground is can be used by clubs worldwide. It supports multi tenancy and localisation.</p>
-            </div>
-        ),
-        status: 'Production',
+        about: {
+            _en: (
+                <div>
+                    <p>HOME GROUND is an ERP (Enterprise Resource Planning) system that targets Sports Businesses. HOME GROUND is targeted at clubs or sports halls that have physical facilities such as tennis courts, badminton courts, soccer pitches etc.</p>
+                    <p>HOME GROUND provides all the technology that a partner needs to run their business effectively with just 10 minutes of setup.</p>
+                    <p>HOME GROUND is can be used by clubs worldwide. It supports multi-tenancy and localisation.</p>
+                    <p>By now, HOME GROUND has been used by 140+ partners from 7 countries: Singapore, Australia, Switzerland, India, Malaysia, Indonesia and Afghanistan.</p>
+                </div>
+            ),
+            _vi: (
+                <div>
+                    <p>HOME GROUND hệ thống hoạch định tài nguyên doanh nghiệp (ERP-Enterprise Resource Planning) tập trung vào các doanh nghiệp thể thao, chẳng hạn như các CLB thể thao, nhà thi đấu,...với các cơ sở vật chất sẵn có như: sân banh, tennis, cầu lông,...</p>
+                    <p>HOME GROUND mang đến giải pháp công nghệ giúp đối tác có thể vận hành các CLB của mình chỉ trong 10 phút chuẩn bị.</p>
+                    <p>HOME GROUND có thể hỗ trợ các đối tác trên toàn cầu bởi tính năng multi-tenancy và localisation.</p>
+                    <p>Hiện tại, HOME GROUND đang được sử dụng bởi 140+ đối tác đến 7 quốc gia: Singapore, Australia, Switzerland, India, Malaysia, Indonesia và Afghanistan.</p>
+                </div>
+            ),
+        },
+        status: ProjectStatus.PRODUCTION,
         stacks: [
             ProjectStackType.NODEJS,
             ProjectStackType.POSGRESQL,
@@ -94,60 +144,129 @@ export const projects = [
         myRoles: [
             {
                 name: 'Team leader',
-                description: ''
+                description: ``
             }, {
                 name: 'Backend developer',
-                description: ''
+                description: ``
             }
         ],
         from: moment('2018-4-9'),
         to: moment('2019-2-12'),
         photos: [
             {
-                title: `Home screen`,
-                subTitle: `All modules' shortcuts`,
+                title: {
+                    _en: `Home screen`,
+                    _vi: `Màn hình chính`,
+                },
+                subTitle: {
+                    _en: `All modules' shortcuts`,
+                    _vi: `Lối vào các chức năng`,
+                },
                 src:`${process.env.PUBLIC_URL}/images/project-rovo-photo-1.png`
             }, {
-                title: 'Customers management',
-                subTitle: 'Viewing, creating, updating, deleting, filtering, import customers from CSV',
+                title: {
+                    _en: `Customers management`,
+                    _vi: `Quản lý khách hàng`,
+                },
+                subTitle: {
+                    _en: `Viewing, creating, updating, deleting, filtering, import customers from CSV`,
+                    _vi: `Xem, thêm, sửa, xóa, lọc, import khách hàng từ tập tin CSV`,
+                },
                 src:`${process.env.PUBLIC_URL}/images/project-rovo-photo-2.png`
             }, {
-                title: 'Memberships management',
-                subTitle: 'Viewing, creating, updating, deleting, filtering staff',
+                title: {
+                    _en: `Memberships management`,
+                    _vi: `Quản lý thành viên và gói thành viên`,
+                },
+                subTitle: {
+                    _en: `Viewing, creating, updating, deleting, filtering membership plans`,
+                    _vi: `Xem, thêm, sửa, xóa, lọc gói thành viên`,
+                },
                 src:`${process.env.PUBLIC_URL}/images/project-rovo-photo-3.png`
             }, {
-                title: 'Ratings & reviews management',
-                subTitle: `Reply customers' reviews, view statistics of ratings and reviews`,
+                title: {
+                    _en: `Ratings & reviews management`,
+                    _vi: `Quản lý đánh giá và bình luận từ người dùng`,
+                },
+                subTitle: {
+                    _en: `Reply customers' reviews, view statistics of ratings and reviews`,
+                    _vi: `Trả lời bình luận, xem thống kê về đánh giá và bình luận`,
+                },
                 src:`${process.env.PUBLIC_URL}/images/project-rovo-photo-4.png`
             }, {
-                title: 'Booking management',
-                subTitle: 'Booking facility from user web',
+                title: {
+                    _en: `Booking management`,
+                    _vi: `Quản lý đặt sân/chỗ`,
+                },
+                subTitle: {
+                    _en: `Booking facility from customer web`,
+                    _vi: `Khách hàng đặt sân/chỗ từ web dành cho khách hàng`,
+                },
                 src:`${process.env.PUBLIC_URL}/images/project-rovo-photo-5.png`
             }, {
-                title: 'Booking management',
-                subTitle: 'Manage bookings from admin dashboard',
+                title: {
+                    _en: `Booking management`,
+                    _vi: `Quản lý đặt sân/chỗ`,
+                },
+                subTitle: {
+                    _en: `Manage bookings from admin dashboard`,
+                    _vi: `Quản lý đặt sân/chỗ từ web dành cho đối tác`,
+                },
                 src:`${process.env.PUBLIC_URL}/images/project-rovo-photo-6.png`
             }, {
-                title: 'Staff management',
-                subTitle: 'Viewing, creating, updating, deleting, filtering staff',
+                title: {
+                    _en: `Staff management`,
+                    _vi: `Quản lý nhân viên`,
+                },
+                subTitle: {
+                    _en: `Viewing, creating, updating, deleting, filtering staff`,
+                    _vi: `Xem, thêm, sửa, xóa, lọc nhân viên`,
+                },
                 src:`${process.env.PUBLIC_URL}/images/project-rovo-photo-7.png`
             }, {
-                title: 'Email campaigns management',
-                subTitle: 'Viewing, creating, updating, deleting, running, filtering campaigns',
+                title:{
+                    _en: `Email campaigns management`,
+                    _vi: `Quản lý chiến dịch email marketing`,
+                },
+                subTitle:{
+                    _en: `Viewing, creating, updating, deleting, running, filtering campaigns`,
+                    _vi: `Xem, thêm, sửa, xóa, lọc chiến dịch`,
+                },
                 src:`${process.env.PUBLIC_URL}/images/project-rovo-photo-8.png`
             }, {
-                title: 'Statistics',
-                subTitle: 'Rendering statistics for pages views, revenues, reviews',
+                title: {
+                    _en: `Statistics`,
+                    _vi: `Thống kê`,
+                },
+                subTitle: {
+                    _en: `Rendering statistics for pages views, revenues, reviews`,
+                    _vi: `Xem thống kê lượt truy cập, doanh thu, bình luận`,
+                },
                 src:`${process.env.PUBLIC_URL}/images/project-rovo-photo-9.png`
             },
         ],
     },
     {
-        name: 'Chợ tin tức (News market)',
+        name: 'CHỢ TIN TỨC',
         logo: `${process.env.PUBLIC_URL}/images/project-htvNews-logo.png`,
         owner: 'HTV Technology Media Services Ltd.',
-        about: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec arcu suscipit, mattis leo nec, commodo odio. Phasellus imperdiet risus ut tristique hendrerit. Quisque elementum eu neque a rhoncus. Etiam eget nisi aliquet, pellentesque odio nec, imperdiet mauris. Phasellus sapien felis, volutpat non eros vel, consectetur tempor dui. In id dui a urna congue gravida. Morbi dignissim leo nec magna pulvinar hendrerit. Vivamus ultricies ultricies finibus. Etiam feugiat commodo aliquet. Nullam facilisis ut magna quis scelerisque. Proin laoreet nisi a massa volutpat, et condimentum nibh volutpat.`,
-        status: 'Beta',
+        about: {
+            _en: (
+                <div>
+                    <p>CHỢ TIN TỨC (Reporters' Market) is a e-marketplace which targets news, especially breaking-news.</p>
+                    <p>CHỢ TIN TỨC is multi-tenancy system. It provide partners (owners of news channels) a management dashboard to sale and buy news, manage their staff and transactions.</p>
+                    <p>CHỢ TIN TỨC also contains an FTP server and a video processing server, so even large HD videos can be uploaded and processed to be sold.</p>
+                </div>
+            ),
+            _vi: (
+                <div>
+                    <p>CHỢ TIN TỨC là một website chợ điện tử hướng đến đối tượng sản phẩm là tin tức, đặc biệt là các tin nóng.</p>
+                    <p>CHỢ TIN TỨC là một hệ thống multi-tenancy. CHỢ TIN TỨC mang đến cho các đối tác một công cụ mua và bán tin tức, quản lý nhân viên và giao dịch của đơn vị.</p>
+                    <p>CHỢ TIN TỨC sử dụng FPT server và server để sử lý video, nên ngay cả những video chất lượng cao, dung lượng lớn cũng có thể được upload, xử lý và bán trên CHỢ TIN TỨC.</p>
+                </div>
+            ),
+        },
+        status: ProjectStatus.BETA,
         stacks: [
             ProjectStackType.NODEJS,
             ProjectStackType.POSGRESQL,
@@ -162,79 +281,235 @@ export const projects = [
         teamSize: 3,
         myRoles: [{
             name: 'Backend developer',
-            description: ''
+            description: ``
         }],
         from: moment('2018-11-01'),
         to: moment(),
-        photos: [],
+        photos: [
+            {
+                title: {
+                    _en: `Home screen`,
+                    _vi: `Trang chủ`,
+                },
+                subTitle: ``,
+                src:`${process.env.PUBLIC_URL}/images/project-htvNews-photo-1.png`
+            }, {
+                title: {
+                    _en: `Dashboard for partners`,
+                    _vi: `Trang quản lý của đối tác`,
+                },
+                subTitle: {
+                    _en: `Adding a news into cart`,
+                    _vi: `Thêm tin vào giỏ hàng`,
+                },
+                src:`${process.env.PUBLIC_URL}/images/project-htvNews-photo-2.png`
+            }, {
+                title: {
+                    _en: `Dashboard for partners`,
+                    _vi: `Trang quản lý của đối tác`,
+                },
+                subTitle: {
+                    _en: `Confirming an order by OTP`,
+                    _vi: `Xác nhận mua tin bằng mã OTP`,
+                },
+                src:`${process.env.PUBLIC_URL}/images/project-htvNews-photo-3.png`
+            }, {
+                title: {
+                    _en: `Dashboard for partners`,
+                    _vi: `Trang quản lý của đối tác`,
+                },
+                subTitle: {
+                    _en: `Staff management`,
+                    _vi: `Quản lý nhân viên`,
+                },
+                src:`${process.env.PUBLIC_URL}/images/project-htvNews-photo-4.png`
+            },{
+                title: {
+                    _en: `Dashboard for admin`,
+                    _vi: `Trang quản lý của quản trị viên`,
+                },
+                subTitle: {
+                    _en: `Partners management`,
+                    _vi: `Quản lý đối tác`,
+                },
+                src:`${process.env.PUBLIC_URL}/images/project-htvNews-photo-5.png`
+            },
+        ],
     },
     {
-        name: 'Lịch HTV (Calendar for HTV TV channel)',
+        name: 'LỊCH HTV',
         logo: `${process.env.PUBLIC_URL}/images/project-htvCalendar-logo.jpg`,
         owner: 'HTV Technology Media Services Ltd.',
-        about: '',
-        status: 'Production',
+        about: {
+            _en: (
+                <div>
+                    <p>LỊCH HTV (Calendar for HTV TV channel) is a system which broadcasts HTV channel's program schedule and events to their audiences.</p>
+                    <p>LỊCH HTV provides the channel audiences an mobile application, which audiences can see broadcasted schedule/events. Besides, audiences also can create their own events or save HTV channel's events to be notified later.</p>
+                    <p>For admins of HTV channel, LỊCH HTV provide them a dashboard to manage program schedule and events.</p>
+                    <p></p>
+                </div>
+            ),
+            _vi: (
+                <div>
+                    <p>LỊCH HTV là hệ thống thông báo lịch phát sóng và sự kiện của nhóm đài HTV đến khán giả của đài.</p>
+                    <p>LỊCH HTV mang đến cho các khán giả một ứng dụng di động để cập nhật lịch phát sóng và sự kiện của đài. Bên cạnh đó, LỊCH HTV còn cho phép người dùng tạo ra các sự kiện cá nhân hoặc lưu các sự kiện của đài để được ứng dụng nhắc nhở khi sự kiện sắp diễn ra.</p>
+                    <p>Đối với quản trị viên của đài, LỊCH HTV cung cấp một website quản lý để quản lý sự kiện và lịch phát sóng.</p>
+                    <p></p>
+                </div>
+            ),
+        },
+        status: ProjectStatus.PRODUCTION,
         stacks: [],
         teamSize: 2,
         myRoles: [{
             name: 'Backend developer',
-            description: ''
+            description: ``
         }],
         from: moment('2018-09-14'),
         to: moment('2019-4-4'),
         photos: [
             {
-                title: 'Home',
-                subTitle: '',
+                title: {
+                    _en: `Users application`,
+                    _vi: `Ứng dụng của người dùng`,
+                },
+                subTitle: {
+                    _en: `Home screen`,
+                    _vi: `Màn hình chính`,
+                },
                 src:`${process.env.PUBLIC_URL}/images/project-htvCalendar-photo-1.jpg`
             }, {
-                title: 'Program trailer',
-                subTitle: '',
+                title: {
+                    _en: `Users application`,
+                    _vi: `Ứng dụng của người dùng`,
+                },
+                subTitle: {
+                    _en: `Trailers of new programs`,
+                    _vi: `Xem trailer các chương trình mới`,
+                },
                 src:`${process.env.PUBLIC_URL}/images/project-htvCalendar-photo-2.jpg`
             }, {
-                title: 'Events',
-                subTitle: '',
+                title: {
+                    _en: `Users application`,
+                    _vi: `Ứng dụng của người dùng`,
+                },
+                subTitle: {
+                    _en: `Events`,
+                    _vi: `Sự kiện`,
+                },
                 src:`${process.env.PUBLIC_URL}/images/project-htvCalendar-photo-3.jpg`
             }, {
-                title: 'Program schedule',
-                subTitle: '',
+                title: {
+                    _en: `Users application`,
+                    _vi: `Ứng dụng của người dùng`,
+                },
+                subTitle: {
+                    _en: `Program schedule`,
+                    _vi: `Lịch phát sóng`,
+                },
                 src:`${process.env.PUBLIC_URL}/images/project-htvCalendar-photo-4.jpg`
             }, {
-                title: 'Calendar',
-                subTitle: '',
+                title: {
+                    _en: `Users application`,
+                    _vi: `Ứng dụng của người dùng`,
+                },
+                subTitle: {
+                    _en: `Calendar`,
+                    _vi: `Lịch`,
+                },
                 src:`${process.env.PUBLIC_URL}/images/project-htvCalendar-photo-5.jpg`
             }, {
-                title: 'Creating new event',
-                subTitle: '',
+                title: {
+                    _en: `Users application`,
+                    _vi: `Ứng dụng của người dùng`,
+                },
+                subTitle: {
+                    _en: `Creating new event`,
+                    _vi: `Tạo sự kiện mới`,
+                },
                 src:`${process.env.PUBLIC_URL}/images/project-htvCalendar-photo-6.jpg`
             }, {
-                title: 'Creating new event',
-                subTitle: '',
+                title: {
+                    _en: `Users application`,
+                    _vi: `Ứng dụng của người dùng`,
+                },
+                subTitle: {
+                    _en: `Creating new event`,
+                    _vi: `Tạo sự kiện mới`,
+                },
                 src:`${process.env.PUBLIC_URL}/images/project-htvCalendar-photo-7.jpg`
             }, {
-                title: 'Creating new event',
-                subTitle: '',
+                title: {
+                    _en: `Users application`,
+                    _vi: `Ứng dụng của người dùng`,
+                },
+                subTitle: {
+                    _en: `Creating new event`,
+                    _vi: `Tạo sự kiện mới`,
+                },
                 src:`${process.env.PUBLIC_URL}/images/project-htvCalendar-photo-8.jpg`
+            }, {
+                title: {
+                    _en: `Admins dasboard`,
+                    _vi: `Trang quản lý của quản trị viên`,
+                },
+                subTitle: {
+                    _en: `Events management`,
+                    _vi: `Quản lý sự kiện`,
+                },
+                src:`${process.env.PUBLIC_URL}/images/project-htvCalendar-photo-9.png`
+            }, {
+                title: {
+                    _en: `Admins dasboard`,
+                    _vi: `Trang quản lý của quản trị viên`,
+                },
+                subTitle: {
+                    _en: `Programs schedule management`,
+                    _vi: `Quản lý lịch chiếu`,
+                },
+                src:`${process.env.PUBLIC_URL}/images/project-htvCalendar-photo-10.png`
             },
         ],
     },
     {
-        name: 'Iura',
+        name: 'IURA',
         logo: `${process.env.PUBLIC_URL}/images/project-iura-logo.png`,
         owner: 'Rockship Ltd.',
-        about: (
-            <div>
-                <p>IURA is a pioneering mobile-based application designed to provide end-to-end connectivity solutions between customers and lawyers.</p>
-                <p>Created using the latest and most advanced technology, the outstanding advantages that IURA brings to you are:</p>
-                <ul>
-                    <li>Leading lawyers, professional specialists - with full qualifications, certificates and direct professional practice in 64 provinces - who will give you the most reliable advice.</li>
-                    <li>Clear, transparent, minimized costs and time savings.</li>
-                    <li>Diverse languages of counsel in addition to Vietnamese such as English, French, Chinese, Japanese, ... helping to better facilitate your dialogue.</li>
-                </ul>
-                <p>With IURA, everyone has their own "personal lawyer" anywhere, at any time in a way that cannot be simpler.</p>
-            </div>
-        ),
-        status: 'Production',
+        about: {
+            _en: (
+                <div>
+                    <p>IURA is a pioneering application which provides an end-to-end connectivity solutions between customers and lawyers.</p>
+                    <p>The outstanding advantages that IURA brings to customers are:</p>
+                    <ul>
+                        <li>Professional lawyers - with full qualifications, certificates - who will give customers the most reliable advices.</li>
+                        <li>A clear, transparent, minimized costs and time savings way to connect to pofessional lawyers.</li>
+                        <li>Diverse languages of counsel in addition to Vietnamese such as English, French, Chinese, Japanese, etc. helping to better facilitate customers' dialogue.</li>
+                    </ul>
+                    <p>Besides, IURA provides lawyers:</p>
+                    <ul>
+                        <li>An effective and time saving solution to connect customers.</li>
+                        <li>A tool to manage their business simpler than ever.</li>
+                    </ul>
+                </div>
+            ),
+            _vi: (
+                <div>
+                    <p>IURA là một ứng dụng tiên phong mang đến giải kết nối luật sư và thân chủ.</p>
+                    <p>Những tính năng nổi bật mà IURA mang lại cho thân chủ:</p>
+                    <ul>
+                        <li>Những luật sư chuyên nghiệp, có đầy đủ bằng cấp và chứng chỉ hành nghề - Sẽ đưa ra những tư vấn chính xác và đáng tin cậy nhất.</li>
+                        <li>Một giải pháp minh bạch, tiết kiệm chi phí và thời gian để kết nối với luật sư.</li>
+                        <li>Hỗ trợ đa dạng các ngôn ngữ: tiếng Việt, Anh, Pháp, Hoa, Nhật,.... giúp khách hàng có thể trao đổi với luật sư phù hợp.</li>
+                    </ul>
+                    <p>Bên cạnh đó IURA mang đến cho luật sư:</p>
+                    <ul>
+                        <li>Một giải pháp hiệu quả và tiết kiệm thời gian để tiếp cận các thân chủ.</li>
+                        <li>Một công cụ để quản lý công việc đơn giản hơn bao giờ hết.</li>
+                    </ul>
+                </div>
+            ),
+        },
+        status: ProjectStatus.PRODUCTION,
         stacks: [
             ProjectStackType.PYTHON,
             ProjectStackType.POSGRESQL,
@@ -251,100 +526,214 @@ export const projects = [
         teamSize: 5,
         myRoles: [{
             name: 'Backend developer',
-            description: ''
+            description: ``
         }],
         from: moment('2017-9-9'),
         to: moment('2018-4-1'),
         photos: [
             {
-                title: 'User application',
-                subTitle: 'Choosing desired practice area for a quick call',
+                title: {
+                    _en: `Customer application`,
+                    _vi: `Ứng dụng dành cho thân chủ`,
+                },
+                subTitle: {
+                    _en: `Choosing desired practice area for a quick call`,
+                    _vi: `Chọn lĩnh vực muốn tư vấn để bắt đầu cuộc gọi`,
+                },
                 src:`${process.env.PUBLIC_URL}/images/project-iura-photo-01.jpeg`
             }, {
-                title: 'User application',
-                subTitle: 'System is finding matched lawyer for the quick call',
+                title: {
+                    _en: `Customer application`,
+                    _vi: `Ứng dụng dành cho thân chủ`,
+                },
+                subTitle: {
+                    _en: `System is finding matched lawyer for the quick call`,
+                    _vi: `Hệ thống đang tìm kiếm luật sư phù hợp`,
+                },
                 src:`${process.env.PUBLIC_URL}/images/project-iura-photo-02.jpeg`
             }, {
-                title: 'User application',
-                subTitle: 'System found a lawyer for the quick call',
+                title: {
+                    _en: `Customer application`,
+                    _vi: `Ứng dụng dành cho thân chủ`,
+                },
+                subTitle: {
+                    _en: `System found a lawyer for the quick call`,
+                    _vi: `Hệ thống đã tìm thấy luật sư phù hợp`,
+                },
                 src:`${process.env.PUBLIC_URL}/images/project-iura-photo-03.jpeg`
             }, {
-                title: 'User application',
-                subTitle: 'Filtering lawyers',
+                title: {
+                    _en: `Customer application`,
+                    _vi: `Ứng dụng dành cho thân chủ`,
+                },
+                subTitle: {
+                    _en: `Filtering lawyers`,
+                    _vi: `Tìm kiếm luật sư theo các tiêu chí`,
+                },
                 src:`${process.env.PUBLIC_URL}/images/project-iura-photo-04.jpeg`
             }, {
-                title: 'User application',
-                subTitle: 'Viewing lawyer profile',
+                title: {
+                    _en: `Customer application`,
+                    _vi: `Ứng dụng dành cho thân chủ`,
+                },
+                subTitle: {
+                    _en: `Viewing lawyer profile`,
+                    _vi: `Xem hồ sơ cá nhân của luật sư`,
+                },
                 src:`${process.env.PUBLIC_URL}/images/project-iura-photo-05.jpeg`
             }, {
-                title: 'Lawyer application',
-                subTitle: 'Home screen',
+                title: {
+                    _en: `Lawyer application`,
+                    _vi: `Ứng dụng dành cho luật sư`,
+                },
+                subTitle: {
+                    _en: `Home screen`,
+                    _vi: `Màn hình chính`,
+                },
                 src:`${process.env.PUBLIC_URL}/images/project-iura-photo-06.png`
             }, {
-                title: 'Lawyer application',
-                subTitle: `Profile management`,
+                title: {
+                    _en: `Lawyer application`,
+                    _vi: `Ứng dụng dành cho luật sư`,
+                },
+                subTitle: {
+                    _en: `Profile management`,
+                    _vi: `Quản lý hồ sơ cá nhân`,
+                },
                 src:`${process.env.PUBLIC_URL}/images/project-iura-photo-07.png`
             }, {
-                title: 'Lawyer application',
-                subTitle: 'Packages management',
+                title: {
+                    _en: `Lawyer application`,
+                    _vi: `Ứng dụng dành cho luật sư`,
+                },
+                subTitle: {
+                    _en: `Packages management`,
+                    _vi: `Quản lý gói tư vấn`,
+                },
                 src:`${process.env.PUBLIC_URL}/images/project-iura-photo-08.png`
             }, {
-                title: 'Lawyer application',
-                subTitle: 'Package detail',
+                title: {
+                    _en: `Lawyer application`,
+                    _vi: `Ứng dụng dành cho luật sư`,
+                },
+                subTitle: {
+                    _en: `Package detail`,
+                    _vi: `Chi tiết một gói tư vấn`,
+                },
                 src:`${process.env.PUBLIC_URL}/images/project-iura-photo-09.png`
             }, {
-                title: 'Lawyer application',
-                subTitle: 'A client is requesting for a quick call',
+                title: {
+                    _en: `Lawyer application`,
+                    _vi: `Ứng dụng dành cho luật sư`,
+                },
+                subTitle: {
+                    _en: `A client is requesting for a quick call`,
+                    _vi: `Có thân chủ đang yêu cầu kết nối`,
+                },
                 src:`${process.env.PUBLIC_URL}/images/project-iura-photo-10.png`
             }, {
-                title: 'Lawyer application',
-                subTitle: 'In a quick call',
+                title: {
+                    _en: `Lawyer application`,
+                    _vi: `Ứng dụng dành cho luật sư`,
+                },
+                subTitle: {
+                    _en: `In a quick call`,
+                    _vi: `Cuộc gọi tư vấn đang diễn ra`,
+                },
                 src:`${process.env.PUBLIC_URL}/images/project-iura-photo-11.png`
             }, {
-                title: 'Lawyer application',
-                subTitle: 'Quick call transaction',
+                title: {
+                    _en: `Lawyer application`,
+                    _vi: `Ứng dụng dành cho luật sư`,
+                },
+                subTitle: {
+                    _en: `Quick call transaction`,
+                    _vi: `Chi tiết giao dịch của cuộc gọi tư vấn`,
+                },
                 src:`${process.env.PUBLIC_URL}/images/project-iura-photo-12.png`
             }, {
-                title: 'Lawyer application',
-                subTitle: 'Notifications management',
+                title: {
+                    _en: `Lawyer application`,
+                    _vi: `Ứng dụng dành cho luật sư`,
+                },
+                subTitle: {
+                    _en: `Notifications management`,
+                    _vi: `Quản lý thông báo`,
+                },
                 src:`${process.env.PUBLIC_URL}/images/project-iura-photo-13.png`
             }, {
-                title: 'Lawyer application',
-                subTitle: 'Payouts info',
+                title: {
+                    _en: `Lawyer application`,
+                    _vi: `Ứng dụng dành cho luật sư`,
+                },
+                subTitle: {
+                    _en: `Payouts info`,
+                    _vi: `Thông tin thanh toán`,
+                },
                 src:`${process.env.PUBLIC_URL}/images/project-iura-photo-14.png`
             }, {
-                title: 'Lawyer application',
-                subTitle: 'Client profile',
+                title: {
+                    _en: `Lawyer application`,
+                    _vi: `Ứng dụng dành cho luật sư`,
+                },
+                subTitle: {
+                    _en: `Client profile`,
+                    _vi: `Hồ sơ cá nhân của thân chủ`,
+                },
                 src:`${process.env.PUBLIC_URL}/images/project-iura-photo-15.png`
             }, {
-                title: 'Lawyer application',
-                subTitle: 'Engagements management',
+                title: {
+                    _en: `Lawyer application`,
+                    _vi: `Ứng dụng dành cho luật sư`,
+                },
+                subTitle: {
+                    _en: `Engagements management`,
+                    _vi: `Quản lý các gói tư vấn đã được mua`,
+                },
                 src:`${process.env.PUBLIC_URL}/images/project-iura-photo-16.png`
             }, {
-                title: 'Lawyer application',
-                subTitle: 'Quick calls history',
+                title: {
+                    _en: `Lawyer application`,
+                    _vi: `Ứng dụng dành cho luật sư`,
+                },
+                subTitle: {
+                    _en: `Quick calls history`,
+                    _vi: `Lịch sử các cuộc gọi tư vấn`,
+                },
                 src:`${process.env.PUBLIC_URL}/images/project-iura-photo-17.png`
             },
         ],
     },
     // {
-    //     name: '',
+    //     name: ``,
     //     logo: `${process.env.PUBLIC_URL}/images/project-xxx-logo.png`,
-    //     owner: '',
-    //     about: '',
-    //     status: '',
+    //     owner: ``,
+    //     about: {
+    //         _en: ``,
+    //         _vi: ``,
+    //     },
+    //     status: {
+    //         _en: ``,
+    //         _vi: ``,
+    //     },
     //     stacks: [],
     //     teamSize: 111,
     //     myRoles: [{
-    //         name: '',
-    //         description: ''
+    //         name: ``,
+    //         description: ``
     //     }],
     //     from: moment('2018-4-9'),
     //     to: moment('2018-4-9'),
     //     photos: [
     //         {
-    //             title: '',
-    //             subTitle: '',
+    //             title: {
+    //                 _en: ``,
+    //                 _vi: ``,
+    //             },
+    //             subTitle: {
+    //                 _en: ``,
+    //                 _vi: ``,
+    //             },
     //             src:`${process.env.PUBLIC_URL}/images/project-xxxxx-photo-xxxxxx.xxx`
     //         },
     //     ],

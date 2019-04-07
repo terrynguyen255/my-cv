@@ -7,9 +7,10 @@ import {
     CarouselIndicators,
     CarouselCaption
 } from 'reactstrap'
+import { withNamespaces } from 'react-i18next';
+import {getLocalizedValue} from "../../helpers/languageHelper";
 
-
-export class PhotoCarousel extends Component {
+class PhotoCarousel extends Component {
     constructor(props) {
         super(props)
         this.state = { activeIndex: 0 }
@@ -46,6 +47,7 @@ export class PhotoCarousel extends Component {
     }
 
     render() {
+        const { t, i18n } = this.props;
         const { activeIndex } = this.state
         const {
             speedSecs,
@@ -62,7 +64,11 @@ export class PhotoCarousel extends Component {
                 onExited={this.onExited}
             >
                 <img src={photo.src} alt={photo.title} />
-                <CarouselCaption className='carousel-caption-custom' captionText={photo.subTitle} captionHeader={photo.title} />
+                <CarouselCaption
+                    className='carousel-caption-custom'
+                    captionText={getLocalizedValue(photo.subTitle, i18n)}
+                    captionHeader={getLocalizedValue(photo.title, i18n)}
+                />
             </CarouselItem>
         ))
 
@@ -130,3 +136,5 @@ PhotoCarousel.defaultProps = {
     speedSecs: 8,
     maxHeight: '500px'
 }
+
+export default withNamespaces('componentProject')(PhotoCarousel)

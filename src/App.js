@@ -1,36 +1,63 @@
 import React, {Component} from 'react';
 import './App.css';
 import { withNamespaces } from 'react-i18next';
-import {InfoField} from "./components/infoField/InforField";
-import {Skill} from "./components/skill/Skill";
-import {UnorderList} from "./components/unorderList/UnorderList";
-import {Project} from "./components/project/Project";
+import InfoField from "./components/infoField/InforField";
+import Skill from "./components/skill/Skill";
+import UnorderList from "./components/unorderList/UnorderList";
+import Project from "./components/project/Project";
 import {projects} from "./resources/projects";
 import {skills} from "./resources/skills";
 import {Avatar} from "./components/avatar/Avatar";
+import {getLocalizedValue} from "./helpers/languageHelper";
 const moment = require('moment')
 
 
 const me = {
+    fullname: {
+        _en: 'TU NGUYEN',
+        _vi: 'TÚ NGUYỄN',
+    },
     commonInfo: {
-        dob: '14 - Nov - 1993',
+        dob: {
+            _en: 'Nov 14, 1993',
+            _vi: '14/11/1993',
+        },
         email: 'nogias9x@gmail.com',
         idCard: '079.193.004.392',
         phone: '0378.678.349',
         facebook: (<a target='_blank' href='https://www.facebook.com/shinigami.nguyen.1414'>Nguyễn Nhật-Nguyên</a>),
         github: (<a target='_blank' href='https://github.com/nogias9x'>Nogias9x</a>),
-        place: (
-            <a target='_blank' href='http://tinyurl.com/y6pltt5u'>
-                458/17 Huỳnh Tấn Phát Street, District 7, HCMC
-            </a>
-        ),
+        place: {
+            _en: (
+                <a target='_blank' href='http://tinyurl.com/y6pltt5u'>
+                    458/17 Huỳnh Tấn Phát Street, District 7, HCMC
+                </a>
+            ),
+            _vi: (
+                <a target='_blank' href='http://tinyurl.com/y6pltt5u'>
+                    458/17 Huỳnh Tấn Phát, Quận 7, TP.HCM
+                </a>
+            ),
+        },
     },
     educations: [{
-        school: 'University of Science (Viet Nam National University Ho Chi Minh City)',
-        from: moment('2012-09-01'),
-        major: 'Software Engineering',
-        degree: 'Bachelor of Science',
-        gpa: 7.31,
+        school: {
+            _en: 'University of Science (Viet Nam National University Ho Chi Minh City)',
+            _vi: 'Đại học Khoa học Tự nhiên (Đại học Quốc gia Thành phố Hồ Chí Minh)',
+        },
+        from: {
+            _en: moment('2012-09-01').format('MMM-YYYY'),
+            _vi: moment('2012-09-01').format('MM/YYYY'),
+        },
+        major: {
+            _en: 'Software Engineering',
+            _vi: 'Kỹ thuật Phần mềm',
+        },
+        degree: {
+            _en: 'Bachelor of Science',
+            _vi: 'Cử nhân',
+        },
+        gpa: '7.31/10',
     }],
     avatar: {
         src: `${process.env.PUBLIC_URL}/images/avatar.png`,
@@ -39,29 +66,66 @@ const me = {
         positionX: '60%',
         positionY: '35%',
     },
+    targets: [
+        {
+            _en: 'To be a senior backend and frontend developer',
+            _vi: 'Trờ thành senior developer mảng backend và frontend',
+        }, {
+            _en: 'To use English fluently (100+ TOEFL)',
+            _vi: 'Sử dụng tiếng Anh thuần thục (100+ TOEFL)',
+        }, {
+            _en: 'To be a leader 2+ projects which has 4+ members',
+            _vi: 'Quản lý 2+ dự án có 4+ thành viên',
+        }
+    ],
     strengths: [
-        'High sense of responsibility',
-        'Hard-working',
-        'Good communication and team-working',
-        'Following processes and coding-conventions consciously',
-        'Ability to work in a high pressure environment',
-        'Reading documents in English fairly',
+        {
+            _en: 'High sense of responsibility',
+            _vi: 'Làm việc có trách nhiệm',
+        }, {
+            _en: 'Hard-working and focus',
+            _vi: 'Làm việc chăm chỉ và tập trung',
+        }, {
+            _en: 'Good communication and team-working',
+            _vi: 'Có kỹ năng làm việc nhóm',
+        }, {
+            _en: 'Following processes and coding-conventions consciously',
+            _vi: 'Tự giác tuân thủ quy trình và coding-conventions',
+        }, {
+            _en: 'Ability to work in a high pressure environment',
+            _vi: 'Chịu được môi trường làm việc áp lực',
+        }, {
+            _en: 'Reading documents in English fairly good',
+            _vi: 'Đọc tài liệu tiếng Anh tốt',
+        }, {
+            _en: 'Eager to learn new techniques and things',
+            _vi: 'Sẵng lòng học công nghệ và kiến thức mới',
+        },
     ],
     hobbies: [
-        'Reading books of literature, sciences and psychology',
-        'Fishing',
-        'Making some handmade things',
-        'Fixing things',
+        {
+            _en: 'Reading books of literature, sciences and psychology',
+            _vi: 'Đọc sách thể loại văn học, khoa học, tâm lý',
+        }, {
+            _en: 'Fishing',
+            _vi: 'Câu cá',
+        }, {
+            _en: 'Making some handmade things',
+            _vi: 'Làm đồ thủ công',
+        }, {
+            _en: 'Fixing things (bugs excluded)',
+            _vi: 'Sửa chữa này nọ (không bao gồm bug)',
+        },
     ],
 }
 
 const languages = [
     {
-        code: 'en',
+        code: '_en',
         flag: `${process.env.PUBLIC_URL}/images/language-en.png`
     },
     {
-        code: 'vi',
+        code: '_vi',
         flag: `${process.env.PUBLIC_URL}/images/language-vn.png`
     }
 ]
@@ -70,12 +134,10 @@ class App extends Component {
     constructor(props) {
         super(props)
         this.changeLanguage = this.changeLanguage.bind(this)
-        this.state = { currentLanguage: 'en' }
     }
 
     changeLanguage (i18n, langCode) {
         i18n.changeLanguage(langCode);
-        this.setState({currentLanguage: langCode})
     }
 
     render() {
@@ -102,7 +164,7 @@ class App extends Component {
                         Avatar avatar={me.avatar}/>
                     </div>
                     <div className="col-md-9">
-                        <h1 className="name">TU NGUYEN</h1>
+                        <h1 className="name">{getLocalizedValue(me.fullname, i18n)}</h1>
                         <h1 className="title">BACKEND DEVELOPER</h1>
 
                         <div className="row">
@@ -126,42 +188,33 @@ class App extends Component {
                     {
                         me.educations.map(edu => (
                             <div className="col-12" style={{paddingLeft: '2rem'}}>
-                                <h5><b>{edu.school}</b></h5>
+                                <h5><b>{getLocalizedValue(edu.school, i18n)}</b></h5>
                                 <div style={{paddingLeft: '2rem'}}>
-                                    <b>From</b>: {edu.from.format('MMM-YYYY')}<br/>
-                                    <b>Major</b>: {edu.degree} in {edu.major}<br/>
-                                    <b>GPA</b>: {edu.gpa}<br/>
+                                    <b>{t('FROM')}</b>: {getLocalizedValue(edu.from, i18n)}<br/>
+                                    <b>{t('MAJOR')}</b>: {getLocalizedValue(edu.degree, i18n)} {t('CONJ_IN_MAJOR')} {getLocalizedValue(edu.major, i18n)}<br/>
+                                    <b>{t('GPA')}</b>: {edu.gpa}<br/>
                                 </div>
                             </div>
                         ))
                     }
                 </div>
 
-
                 <div className="row section-dark">
                     <div className="col-12">
-                        <div className="section-tag"><h3>MY TARGETS</h3></div>
+                        <div className="section-tag"><h3>{t('TAG_MY_TARGETS')}</h3></div>
                     </div>
                     <div className="col-12">
-                        Within next 2 years, I want to:
-                        <ul>
-                            <li>Become a senior Website and Android developer</li>
-                            <li>Use English fluently (100+ TOEFL)</li>
-                            <li>Be able to lead a team of 4+ developers</li>
-                        </ul>
+                        {t('TARGETS_INTRO')}
+                        <UnorderList list={me.targets} columns={1}/>
                     </div>
                     <div className="col-12"><hr/></div>
                     <div className="col-12">
-                        <div className="section-tag"><h3>MY SKILLS</h3></div>
+                        <div className="section-tag"><h3>{t('TAG_MY_SKILLS')}</h3></div>
                     </div>
                     <div className="col-12">
                         {
                             skills.map(skill => (
-                                <Skill
-                                    name={skill.name}
-                                    points={skill.points}
-                                    description={skill.description}
-                                />
+                                <Skill skill={skill}/>
                             ))
                         }
                     </div>
@@ -171,14 +224,14 @@ class App extends Component {
                     <div className="col-12">
                         <div className="row">
                             <div className="col-12">
-                                <div className="section-tag"><h3>MY STRENGTHS</h3></div>
+                                <div className="section-tag"><h3>{t('TAG_MY_STRENGTHS')}</h3></div>
                                 <UnorderList list={me.strengths} columns={2} stubborn={false}/>
                             </div>
                         </div>
                         <hr/>
                         <div className="row">
                             <div className="col-12">
-                                <div className="section-tag"><h3>MY HOBBIES</h3></div>
+                                <div className="section-tag"><h3>{t('TAG_MY_HOBBIES')}</h3></div>
                                 <UnorderList list={me.hobbies} columns={2} stubborn={false}/>
                             </div>
                         </div>
@@ -187,7 +240,7 @@ class App extends Component {
 
                 <div className="row section-dark">
                     <div className="col-12">
-                        <div className="section-tag"><h3>MY PROJECTS</h3></div>
+                        <div className="section-tag"><h3>{t('TAG_MY_PROJECTS')}</h3></div>
                     </div>
                     {
                         projects.map(p => (

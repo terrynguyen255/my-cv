@@ -14,6 +14,12 @@
 
 }
 
+.modal-dialog-custom .modal-content {
+    background: #dbe5f1;
+}
+.modal-header-custom {
+    border-bottom: 1px solid #008dd7 !important;
+}
 .modal-title {
     width: 100%;
 }

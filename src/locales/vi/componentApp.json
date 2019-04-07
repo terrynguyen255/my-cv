@@ -1,3 +1,15 @@
 {
-  "TAG_MY_EDUCATION": "HỌC VẤN"
+  "TAG_MY_EDUCATION": "HỌC VẤN",
+  "TAG_MY_TARGETS": "MỤC TIÊU",
+  "TAG_MY_SKILLS": "KỸ NĂNG",
+  "TAG_MY_STRENGTHS": "ƯU ĐIỂM",
+  "TAG_MY_HOBBIES": "SỞ THÍCH",
+  "TAG_MY_PROJECTS": "DỰ ÁN",
+
+  "DATE_FORMAT": "DD/MM/YYYY",
+  "CONJ_IN_MAJOR": "",
+  "FROM": "Khóa",
+  "MAJOR": "Chuyên ngành",
+  "GPA": "Điểm tốt nghiệp",
+  "TARGETS_INTRO": "Trong 5 năm tới, tôi muốn:"
 }

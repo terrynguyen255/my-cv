@@ -5,14 +5,19 @@ import {
     ModalHeader,
     ModalBody,
 } from 'reactstrap'
-import {ProjectStack} from "../projectStack/ProjectStack";
-import {PhotoCarousel} from "../PhotoCarousel/PhotoCarousel";
+import { withNamespaces } from 'react-i18next';
 import ReactTooltip from "react-tooltip";
+
+import {ProjectStack} from "../projectStack/ProjectStack";
+import PhotoCarousel from "../PhotoCarousel/PhotoCarousel";
+import {getLocalizedValue} from "../../helpers/languageHelper";
+
 const moment = require('moment')
+
 
 const DATE_FORMAT = 'DD-MMM-YYYY'
 
-export class Project extends Component {
+class Project extends Component {
     constructor(props) {
         super(props)
         this.state = {
@@ -22,9 +27,13 @@ export class Project extends Component {
     }
 
     render() {
+        const { t, i18n } = this.props;
         const project = this.props.project
         const durationMonths = project.to.diff(project.from, 'months')
         const projectToDiffToday = moment().diff(project.to, 'days')
+        const durationFrom = project.from.format(t('DATE_FORMAT'))
+        const durationTo =  !projectToDiffToday ? t('PRESENT') : project.to.format(t('DATE_FORMAT'))
+        const durationRange = `(${durationFrom} - ${durationTo})`
 
         return (
             <div
@@ -37,9 +46,9 @@ export class Project extends Component {
                 <Modal
                     isOpen={this.state.detailOpened}
                     toggle={this.toggleDetailDialog}
-                    className='modal-lg'
+                    className='modal-lg modal-dialog-custom'
                 >
-                    <ModalHeader toggle={this.toggleDetailDialog}>
+                    <ModalHeader toggle={this.toggleDetailDialog} className="modal-header-custom">
                         <div className='row'>
                             <div className='col-2'>
                                 <div className='project-logo-container'><img src={project.logo}/></div>
@@ -47,20 +56,21 @@ export class Project extends Component {
                             <div className='col-10'>
                                 <p>{project.name}</p>
                                 <p>
-                                    <b>Duration: </b>
-                                    {durationMonths} months ({project.from.format(DATE_FORMAT)} - { projectToDiffToday === 0 ? 'present' : project.to.format(DATE_FORMAT)})</p>
+                                    <b>{t('LABEL_DURATION')}: </b>
+                                    {durationMonths} {t('MONTHS')} {durationRange}
+                                </p>
                                 <p>
-                                    <b>My role{project.myRoles.length > 1 ? 's' : ''}: </b>
+                                    <b>{project.myRoles.length > 1 ? t('LABEL_MY_ROLES') : t('LABEL_MY_ROLE')}: </b>
                                     { project.myRoles.map(role => role.name).join(', ') }
                                 </p>
                             </div>
                         </div>
                     </ModalHeader>
                     <ModalBody>
-                        <p className='project-about'><b>About:</b> {project.about}</p>
-                        <p><b>Team size:</b> {project.teamSize} members</p>
-                        <p><b>Status:</b> {project.status}</p>
-                        <p><b>Stacks:</b></p>
+                        <p className='project-about'><b>{t('LABEL_ABOUT')}:</b> {getLocalizedValue(project.about, i18n)}</p>
+                        <p><b>{t('LABEL_TEAM_SIZE')}:</b> {project.teamSize} {t('MEMBERS')}</p>
+                        <p><b>{t('LABEL_STATUS')}:</b> {getLocalizedValue(project.status, i18n)}</p>
+                        <p><b>{t('LABEL_STACKS')}:</b></p>
                         <div className='row' style={{margin:0}}>
                             {
                                 project.stacks.map(stack => {
@@ -78,7 +88,7 @@ export class Project extends Component {
                             project.photos.length > 0 ?
                                 (
                                     <div>
-                                        <p><b>Photos:</b></p>
+                                        <p><b>{t('LABEL_PHOTOS')}:</b></p>
                                         <div className='row'>
                                             <div className='col-12'>
                                                 <PhotoCarousel maxHeight='50rem' items={project.photos}/>
@@ -104,3 +114,5 @@ export class Project extends Component {
 
 Project.defaultProps = {
 }
+
+export default withNamespaces('componentProject')(Project)
