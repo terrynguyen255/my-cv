@@ -359,7 +359,15 @@ export const projects = [
             ),
         },
         status: ProjectStatus.PRODUCTION,
-        stacks: [],
+        stacks: [
+            ProjectStackType.NODEJS,
+            ProjectStackType.POSGRESQL,
+            ProjectStackType.SENTRY,
+            ProjectStackType.POSTMAN,
+            ProjectStackType.REACT,
+            ProjectStackType.REACT_NATIVE,
+            ProjectStackType.SLACK,
+        ],
         teamSize: 2,
         myRoles: [{
             name: 'Backend developer',

@@ -40,6 +40,10 @@ export const ProjectStackType = {
         name: 'React',
         logo: `${process.env.PUBLIC_URL}/images/stack-reactjs.png`,
     },
+    REACT_NATIVE: {
+        name: 'React',
+        logo: `${process.env.PUBLIC_URL}/images/stack-reactNative.png`,
+    },
     SWIFT: {
         name: 'Swift',
         logo: `${process.env.PUBLIC_URL}/images/stack-swift.png`,
