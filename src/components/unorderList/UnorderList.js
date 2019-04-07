@@ -6,7 +6,7 @@ import {getLocalizedValue} from "../../helpers/languageHelper";
 
 class UnorderList extends Component {
     render() {
-        const { t, i18n } = this.props;
+        const { i18n } = this.props;
         const defaultColumns = 1
         const columns = this.props.columns || defaultColumns
         const renderedLiElements = this.props.list.map(element => (<li>{getLocalizedValue(element, i18n)}</li>))

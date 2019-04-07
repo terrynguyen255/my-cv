@@ -5,7 +5,7 @@ import {getLocalizedValue} from "../../helpers/languageHelper";
 
 class Skill extends Component {
     render() {
-        const { t, i18n } = this.props;
+        const { i18n } = this.props;
         let pointsElements = []
         for (let i = 1; i <= 10; i++) {
             if (i <= this.props.skill.points) {

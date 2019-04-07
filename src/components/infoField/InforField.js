@@ -6,7 +6,7 @@ import {getLocalizedValue} from "../../helpers/languageHelper";
 class InfoField extends Component {
     render() {
         const icon = _getIconPath(this.props.type)
-        const { t, i18n } = this.props;
+        const { i18n } = this.props;
         const value = getLocalizedValue(this.props.value, i18n)
         return (
             <div className="col-md-6 col-12">
