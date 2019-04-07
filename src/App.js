@@ -25,16 +25,16 @@ const me = {
         email: 'nogias9x@gmail.com',
         idCard: '079.193.004.392',
         phone: '0378.678.349',
-        facebook: (<a target='_blank' href='https://www.facebook.com/shinigami.nguyen.1414'>Nguyễn Nhật-Nguyên</a>),
-        github: (<a target='_blank' href='https://github.com/nogias9x'>Nogias9x</a>),
+        facebook: (<a target='_blank' rel='noopener noreferrer' href='https://www.facebook.com/shinigami.nguyen.1414'>Nguyễn Nhật-Nguyên</a>),
+        github: (<a target='_blank' rel='noopener noreferrer' href='https://github.com/nogias9x'>Nogias9x</a>),
         place: {
             _en: (
-                <a target='_blank' href='http://tinyurl.com/y6pltt5u'>
+                <a target='_blank' rel='noopener noreferrer' href='http://tinyurl.com/y6pltt5u'>
                     458/17 Huỳnh Tấn Phát Street, District 7, HCMC
                 </a>
             ),
             _vi: (
-                <a target='_blank' href='http://tinyurl.com/y6pltt5u'>
+                <a target='_blank' rel='noopener noreferrer' href='http://tinyurl.com/y6pltt5u'>
                     458/17 Huỳnh Tấn Phát, Quận 7, TP.HCM
                 </a>
             ),
