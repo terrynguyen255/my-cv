@@ -93,7 +93,7 @@ const me = {
             _vi: 'Tự giác tuân thủ quy trình và coding-conventions',
         }, {
             _en: 'Ability to work in a high pressure environment',
-            _vi: 'Chịu được môi trường làm việc áp lực',
+            _vi: 'Làm việc được dưới môi trường áp lực',
         }, {
             _en: 'Reading documents in English fairly good',
             _vi: 'Đọc tài liệu tiếng Anh tốt',
@@ -252,12 +252,6 @@ class App extends Component {
                             </div>
                         ))
                     }
-                </div>
-
-                <div className="row">
-                    <div className="col-1">
-                        One of 1 columns
-                    </div>
                 </div>
             </div>
         );
