@@ -7,6 +7,7 @@ export class Avatar extends Component {
             <div className="avatar-container">
                 <img
                     src={`${process.env.PUBLIC_URL}/images/avatar-frame.png`}
+                    alt="avatar"
                     style={{
                         backgroundImage: `url('${this.props.avatar.src}')`,
                         backgroundRepeat: 'no-repeat',

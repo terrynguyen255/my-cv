@@ -11,7 +11,7 @@ export class ProjectStack extends Component {
                     className='stack-logo-container'
                     data-tip data-for={this.props.stack.name}
                 >
-                    <img src={this.props.stack.logo}/>
+                    <img src={this.props.stack.logo} alt={this.props.stack.name}/>
                 </div>
             </div>
         )

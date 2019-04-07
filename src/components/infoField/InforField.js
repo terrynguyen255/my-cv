@@ -11,7 +11,7 @@ class InfoField extends Component {
         return (
             <div className="col-md-6 col-12">
                 <div className="col-2 info-field-icon-container">
-                    <img src={icon}/>
+                    <img src={icon} alt={this.props.type}/>
                 </div>
                 <div className="col-9 info-field-icon-value">{value}</div>
             </div>

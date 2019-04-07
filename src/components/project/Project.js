@@ -41,7 +41,7 @@ class Project extends Component {
                 onClick={this.toggleDetailDialog}
             >
                 <ReactTooltip id={project.name} type='info'>{project.name}</ReactTooltip>
-                <div className='project-logo-container' data-tip data-for={project.name}><img src={project.logo}/></div>
+                <div className='project-logo-container' data-tip data-for={project.name}><img src={project.logo} alt={project.name}/></div>
 
                 <Modal
                     isOpen={this.state.detailOpened}
@@ -51,7 +51,7 @@ class Project extends Component {
                     <ModalHeader toggle={this.toggleDetailDialog} className="modal-header-custom">
                         <div className='row'>
                             <div className='col-2'>
-                                <div className='project-logo-container'><img src={project.logo}/></div>
+                                <div className='project-logo-container'><img src={project.logo} alt={project.name}/></div>
                             </div>
                             <div className='col-10'>
                                 <p>{project.name}</p>
