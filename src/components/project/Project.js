@@ -14,9 +14,6 @@ import {getLocalizedValue} from "../../helpers/languageHelper";
 
 const moment = require('moment')
 
-
-const DATE_FORMAT = 'DD-MMM-YYYY'
-
 class Project extends Component {
     constructor(props) {
         super(props)
