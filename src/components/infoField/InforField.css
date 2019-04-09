@@ -1,19 +1,19 @@
 .info-field-icon-container {
     padding: 0 !important;
     max-width: 1.5rem !important;
-    float: left;
 }
 
 .info-field-icon-container > img {
     width: 100%;
+    padding-right: 0 !important;
 }
 
 .info-field-icon-value {
-    float: left;
     line-height: 1.5rem;
+    padding: 0 !important;
+    margin-left: 0.5rem;
 }
 
 .info-field-icon-value a {
-    color: black;
     text-decoration: none;
 }

@@ -110,8 +110,8 @@ const me = {
             _en: 'Fishing',
             _vi: 'Câu cá',
         }, {
-            _en: 'Making some handmade things',
-            _vi: 'Làm đồ thủ công',
+            _en: (<a target='_blank' rel='noopener noreferrer' href='https://www.facebook.com/shinigami.nguyen.1414/media_set?set=a.775055715986837&type=3'>Drawing, cooking & DIY</a>),
+            _vi: (<a target='_blank' rel='noopener noreferrer' href='https://www.facebook.com/shinigami.nguyen.1414/media_set?set=a.775055715986837&type=3'>Vẽ, nấu ăn và đồ thủ công</a>),
         }, {
             _en: 'Fixing things (bugs excluded)',
             _vi: 'Sửa chữa này nọ (không bao gồm bug)',
@@ -160,10 +160,10 @@ class App extends Component {
                 </div>
 
                 <div className="row section-light">
-                    <div className="col-md-3"><
+                    <div className="col-md-4"><
                         Avatar avatar={me.avatar}/>
                     </div>
-                    <div className="col-md-9">
+                    <div className="col-md-8">
                         <h1 className="name">{getLocalizedValue(me.fullname, i18n)}</h1>
                         <h1 className="title">BACKEND DEVELOPER</h1>
 
@@ -171,10 +171,12 @@ class App extends Component {
                             {
                                 Object.keys(me.commonInfo).map(key => {
                                     return (
-                                        <InfoField
-                                            type={key}
-                                            value={me.commonInfo[key]}
-                                        />
+                                        <div className="col-md-6 col-12">
+                                            <InfoField
+                                                type={key}
+                                                value={me.commonInfo[key]}
+                                            />
+                                        </div>
                                     )
                                 })
                             }
@@ -253,6 +255,8 @@ class App extends Component {
                         ))
                     }
                 </div>
+
+                This site is powered by ReactJS
             </div>
         );
     }
