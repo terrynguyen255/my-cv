@@ -256,7 +256,9 @@ class App extends Component {
                     }
                 </div>
 
-                This site is powered by ReactJS
+                <div className="footer">
+                    This site is powered by ReactJS
+                </div>
             </div>
         );
     }

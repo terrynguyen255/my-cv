@@ -75,3 +75,9 @@ hr {
     border-radius: 0.4rem;
     margin-right: 0.5rem;
 }
+
+.footer {
+    display: flex;
+    justify-content: center;
+    font-style: italic;
+}
