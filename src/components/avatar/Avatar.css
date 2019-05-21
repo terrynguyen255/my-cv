@@ -1,9 +1,0 @@
-.avatar-container {
-    max-width: 14rem;
-    margin: auto;
-    padding: 0;
-}
-
-.avatar-container > img {
-    width: 100%;
-}
