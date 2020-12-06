@@ -29,13 +29,13 @@ const me = {
         github: (<a target='_blank' rel='noopener noreferrer' href='https://github.com/nogias9x'>Nogias9x</a>),
         place: {
             _en: (
-                <a target='_blank' rel='noopener noreferrer' href='http://tinyurl.com/y6pltt5u'>
-                    458/17 Huỳnh Tấn Phát Street, District 7, HCMC
+                <a target='_blank' rel='noopener noreferrer' href='https://tinyurl.com/y5dvobem'>
+                    613 Huỳnh Tấn Phát Street, District 7, HCMC
                 </a>
             ),
             _vi: (
-                <a target='_blank' rel='noopener noreferrer' href='http://tinyurl.com/y6pltt5u'>
-                    458/17 Huỳnh Tấn Phát, Quận 7, TP.HCM
+                <a target='_blank' rel='noopener noreferrer' href='https://tinyurl.com/y5dvobem'>
+                    613 Huỳnh Tấn Phát, Quận 7, TP.HCM
                 </a>
             ),
         },
@@ -95,7 +95,7 @@ const me = {
             _en: 'Ability to work in a high pressure environment',
             _vi: 'Làm việc được dưới môi trường áp lực',
         }, {
-            _en: 'Reading documents in English fairly good',
+            _en: 'Reading documents in English fairly well',
             _vi: 'Đọc tài liệu tiếng Anh tốt',
         }, {
             _en: 'Eager to learn new techniques and things',
@@ -104,8 +104,8 @@ const me = {
     ],
     hobbies: [
         {
-            _en: 'Reading books of literature, sciences and psychology',
-            _vi: 'Đọc sách thể loại văn học, khoa học, tâm lý',
+            _en: 'Reading books',
+            _vi: 'Đọc sách',
         }, {
             _en: 'Fishing',
             _vi: 'Câu cá',
@@ -165,7 +165,7 @@ class App extends Component {
                     </div>
                     <div className="col-md-8">
                         <h1 className="name">{getLocalizedValue(me.fullname, i18n)}</h1>
-                        <h1 className="title">BACKEND DEVELOPER</h1>
+                        <h1 className="title">FULL STACK DEVELOPER</h1>
 
                         <div className="row">
                             {

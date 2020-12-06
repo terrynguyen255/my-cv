@@ -1,20 +1,10 @@
 export const skills = [
     {
-        name: {
-            _en: `MPA`,
-            _vi: `Web đa trang`,
-        },
+        name: 'ReactJS',
         points: 8,
         description: {
-            _en: `Server-side rendering with HTML, CSS, Javascript`,
-            _vi: `Kỹ thuật dựng HTML, CSS, Javascript phía server`,
-        },
-    }, {
-        name: 'ReactJS',
-        points: 4,
-        description: {
-            _en: `The basics of ReactJS`,
-            _vi: `Cơ bản ReactJS`,
+            _en: `1.5 year exp in React, Redux, Saga`,
+            _vi: `2 năm KN với React, Redux, Saga`,
         },
     }, {
         name: 'Python',
@@ -25,29 +15,18 @@ export const skills = [
         },
     }, {
         name: 'NodeJS',
-        points: 8.5,
+        points: 9,
         description: {
-            _en: `1 year exp in Express-Sequelize`,
-            _vi: `1 năm KN với Express-Sequelize`,
+            _en: `2 years exp in Express-Sequelize`,
+            _vi: `2 năm KN với Express-Sequelize`,
         },
     }, {
-        name: {
-            _en: `OOP`,
-            _vi: `Lập trình HĐT`,
-        },
-        points: 7,
-        description: '',
-    }, {
-        name: 'PostgreSQL',
+        name: 'SQL',
         points: 8,
         description: {
-            _en: `1.5 year exp`,
-            _vi: `1.5 năm KN`,
+            _en: `2.5 years exp`,
+            _vi: `2.5 năm KN`,
         },
-    }, {
-        name: 'VC-Git',
-        points: 8,
-        description: '',
     }, {
         name: {
             _en: `UI designing`,
@@ -60,7 +39,7 @@ export const skills = [
             _en: `English`,
             _vi: `Tiếng Anh`,
         },
-        points: 7,
+        points: 8,
         description: {
             _en: `Intermediate`,
             _vi: `Trung cấp`,
