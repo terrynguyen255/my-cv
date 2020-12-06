@@ -148,8 +148,9 @@ class App extends Component {
                 <div className="row">
                     <div className="col-12">
                         {
-                            languages.map(lang => (
+                            languages.map((lang, idx) => (
                                 <button
+                                    key={idx}
                                     className="toggle-language-button"
                                     style={{backgroundImage: `url('${lang.flag}')`}}
                                     onClick={() => this.changeLanguage(i18n, lang.code)}
@@ -171,7 +172,7 @@ class App extends Component {
                             {
                                 Object.keys(me.commonInfo).map(key => {
                                     return (
-                                        <div className="col-md-6 col-12">
+                                        <div className="col-md-6 col-12" key={key}>
                                             <InfoField
                                                 type={key}
                                                 value={me.commonInfo[key]}
@@ -188,8 +189,8 @@ class App extends Component {
                         <div className="section-tag"><h3>{t('TAG_MY_EDUCATION')}</h3></div>
                     </div>
                     {
-                        me.educations.map(edu => (
-                            <div className="col-12" style={{paddingLeft: '2rem'}}>
+                        me.educations.map((edu, idx) => (
+                            <div className="col-12" key={idx} style={{paddingLeft: '2rem'}}>
                                 <h5><b>{getLocalizedValue(edu.school, i18n)}</b></h5>
                                 <div style={{paddingLeft: '2rem'}}>
                                     <b>{t('FROM')}</b>: {getLocalizedValue(edu.from, i18n)}<br/>
@@ -215,8 +216,8 @@ class App extends Component {
                     </div>
                     <div className="col-12">
                         {
-                            skills.map(skill => (
-                                <Skill skill={skill}/>
+                            skills.map((skill, idx) => (
+                                <Skill key={idx} skill={skill}/>
                             ))
                         }
                     </div>
@@ -245,8 +246,9 @@ class App extends Component {
                         <div className="section-tag"><h3>{t('TAG_MY_PROJECTS')}</h3></div>
                     </div>
                     {
-                        projects.map(p => (
+                        projects.map((p, idx) => (
                             <div
+                                key={idx}
                                 className="col-md-2 col-6"
                                 style={{paddingRight: 0, marginBottom: '1rem'}}
                             >

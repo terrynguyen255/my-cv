@@ -9,7 +9,7 @@ class UnorderList extends Component {
         const { i18n } = this.props;
         const defaultColumns = 1
         const columns = this.props.columns || defaultColumns
-        const renderedLiElements = this.props.list.map(element => (<li>{getLocalizedValue(element, i18n)}</li>))
+        const renderedLiElements = this.props.list.map((element, idx) => (<li key={idx}>{getLocalizedValue(element, i18n)}</li>))
 
         return (
             <Media query="(max-width: 400px)">
@@ -18,8 +18,8 @@ class UnorderList extends Component {
                         <ul
                             style={{
                                 columns: String(defaultColumns),
-                                webkitColumns: String(defaultColumns),
-                                mozColumns: String(defaultColumns),
+                                WebkitColumns: String(defaultColumns),
+                                MozColumns: String(defaultColumns),
                             }}
                         >
                             {renderedLiElements}
@@ -28,8 +28,8 @@ class UnorderList extends Component {
                         <ul
                             style={{
                                 columns: String(columns),
-                                webkitColumns: String(columns),
-                                mozColumns: String(columns),
+                                WebkitColumns: String(columns),
+                                MozColumns: String(columns),
                             }}
                         >
                             {renderedLiElements}

@@ -70,9 +70,9 @@ class Project extends Component {
                         <p><b>{t('LABEL_STACKS')}:</b></p>
                         <div className='row' style={{margin:0}}>
                             {
-                                project.stacks.map(stack => {
+                                project.stacks.map((stack, idx) => {
                                     return (
-                                        <div className='col-1' style={{margin:0, padding:0}}>
+                                        <div key={idx} className='col-1' style={{margin:0, padding:0}}>
                                             <ProjectStack stack={stack}/>
                                         </div>
                                     )
