@@ -55,8 +55,9 @@ class PhotoCarousel extends Component {
         } = this.props
         
         
-        const carouselItems = this.props.items.map(photo => (
+        const carouselItems = this.props.items.map((photo, idx) => (
             <CarouselItem
+                key={idx}
                 className='carousel-item-custom'
                 tag='div'
                 key={photo.src}

@@ -9,12 +9,12 @@ class Skill extends Component {
         let pointsElements = []
         for (let i = 1; i <= 10; i++) {
             if (i <= this.props.skill.points) {
-                pointsElements.push(<div className="point point-full"></div>)
+                pointsElements.push(<div key={i} className="point point-full"></div>)
             }
             else if (i > this.props.skill.points && i - 1 < this.props.skill.points) {
-                pointsElements.push(<div className="point point-half"></div>)
+                pointsElements.push(<div key={i} className="point point-half"></div>)
             } else {
-                pointsElements.push(<div className="point"></div>)
+                pointsElements.push(<div key={i} className="point"></div>)
             }
         }
         return (
