@@ -20,9 +20,17 @@ export class ProjectStack extends Component {
 
 
 export const ProjectStackType = {
+    MY_SQL: {
+        name: 'MySQL',
+        logo: `${process.env.PUBLIC_URL}/images/stack-mysql.png`,
+    },
     POSGRESQL: {
         name: 'PosgreSQL',
         logo: `${process.env.PUBLIC_URL}/images/stack-posgresql.png`,
+    },
+    ELASTICSEARCH: {
+        name: 'Elasticsearch',
+        logo: `${process.env.PUBLIC_URL}/images/stack-elasticsearch.png`,
     },
     SLACK: {
         name: 'Slack',

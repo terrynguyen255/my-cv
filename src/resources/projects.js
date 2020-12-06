@@ -15,6 +15,102 @@ const ProjectStatus = {
 
 export const projects = [
     {
+        name: 'QUOD AI',
+        logo: `${process.env.PUBLIC_URL}/images/project-quodai-logo.png`,
+        owner: 'QuodAI Pte',
+        about: {
+            _en: (
+              <div>
+                  Serving at: <a href="https://beta.quod.ai">https://beta.quod.ai</a>
+                  <p>QUOD AI is an AI tool that helps developers understand their codebase and write better code.</p>
+                  <p>QUOD AI analyzes developers' source-code and provide a real-time Stackoverflow-like system where developers can ask it about their code.</p>
+                  <p>QUOD AI is also communication channel where developers know which members they should discuss with to solve their specific problems.</p>
+              </div>
+            ),
+            _vi: (
+              <div>
+                  Tại: <a href="https://beta.quod.ai">https://beta.quod.ai</a>
+                  <p>QUOD AI là một công cụ sử dụng trí tuệ nhân tạo để giúp lập trình viên hiểu source-code và viết code tốt hơn.</p>
+                  <p>QUOD AI phân tích source-code của developer và đưa ra 1 hệ thống câu hỏi tương tự như Stackoverflow để người dùng có thể hỏi về source-code của mình.</p>
+                  <p>QUOD AI cũng là 1 kênh giao tiếp nơi developer có thể biết mình cần trao đổi với ai để giải quyết vấn đề cụ thể của mình.</p>
+              </div>
+            ),
+        },
+        status: ProjectStatus.PRODUCTION,
+        stacks: [
+            ProjectStackType.NODEJS,
+            ProjectStackType.REACT,
+            ProjectStackType.MY_SQL,
+            ProjectStackType.ELASTICSEARCH,
+            ProjectStackType.DOCKER,
+            ProjectStackType.SENTRY,
+            ProjectStackType.POSTMAN,
+            ProjectStackType.SLACK,
+        ],
+        teamSize: 9,
+        myRoles: [
+            {
+                name: 'Full stack dev',
+                description: ``
+            },
+        ],
+        from: moment('2019-11-06'),
+        to: moment(),
+        photos: [
+            {
+                title: {
+                    _en: 'Overview of your repository',
+                    _vi: 'Tổng quan repository',
+                },
+                subTitle: {
+                    _en: `Out-standing tags and answers`,
+                    _vi: `Các tag và answer nổi bật`,
+                },
+                src: `${process.env.PUBLIC_URL}/images/project-quodai-photo-1.png`
+            }, {
+                title: {
+                    _en: 'Details of an answer',
+                    _vi: 'Chi tiết của answer',
+                },
+                subTitle: {
+                    _en: `Last change, experts, comments, collections`,
+                    _vi: `Thay đổi gần nhất, chuyên gia, bình luận, bộ answers`,
+                },
+                src: `${process.env.PUBLIC_URL}/images/project-quodai-photo-2.png`
+            }, {
+                title: {
+                    _en: 'Details of an answer',
+                    _vi: 'Chi tiết của answer',
+                },
+                subTitle: {
+                    _en: `And related answers`,
+                    _vi: `Và các answers liên quan`,
+                },
+                src: `${process.env.PUBLIC_URL}/images/project-quodai-photo-3.png`
+            }, {
+                title: {
+                    _en: 'Searching your concerns',
+                    _vi: 'Tìm kiếm',
+                },
+                subTitle: {
+                    _en: `Search on aspects: code, tags, file, last modified`,
+                    _vi: `Trên nhiều thuộc tính của anwser`,
+                },
+                src: `${process.env.PUBLIC_URL}/images/project-quodai-photo-4.png`
+            }, {
+                title: {
+                    _en: 'Manage members',
+                    _vi: 'Thành viên',
+                },
+                subTitle: {
+                    _en: `Invite and manage members`,
+                    _vi: `Mời thành viên mới và quản lý thành viên`,
+                },
+                src: `${process.env.PUBLIC_URL}/images/project-quodai-photo-5.png`
+            }
+        ],
+    },
+    {
         name: 'PREDICT IT',
         logo: `${process.env.PUBLIC_URL}/images/project-predictit-logo.png`,
         owner: 'Sibyl Entertainment',
