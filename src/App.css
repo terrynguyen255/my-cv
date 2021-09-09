@@ -74,7 +74,7 @@ hr {
     background-size: cover;
     width: 2rem;
     height: 1.5rem;
-    border: solid 0.07rem black;
+    border: solid 0.07rem #CCC;
     border-radius: 0.4rem;
     margin-right: 0.5rem;
 }
