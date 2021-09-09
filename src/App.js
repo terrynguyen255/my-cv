@@ -168,7 +168,7 @@ class App extends Component {
                         <h1 className="name">{getLocalizedValue(me.fullname, i18n)}</h1>
                         <h1 className="title">FULL STACK DEVELOPER</h1>
 
-                        <div className="row">
+                        <div className="row" style={{marginTop: '4rem'}}>
                             {
                                 Object.keys(me.commonInfo).map(key => {
                                     return (

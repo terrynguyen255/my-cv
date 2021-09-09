@@ -9,7 +9,7 @@ class InfoField extends Component {
         const { i18n } = this.props;
         const value = getLocalizedValue(this.props.value, i18n)
         return (
-            <div className="row">
+            <div className="row info-field">
                 <div className="col-2 info-field-icon-container">
                     <img src={icon} alt={this.props.type}/>
                 </div>

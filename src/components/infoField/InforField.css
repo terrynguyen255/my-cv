@@ -1,6 +1,10 @@
+.info-field {
+    margin-bottom: 0.325rem;
+}
+
 .info-field-icon-container {
     padding: 0 !important;
-    max-width: 1.5rem !important;
+    max-width: 1.3rem !important;
 }
 
 .info-field-icon-container > img {
