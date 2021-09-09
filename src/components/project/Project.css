@@ -16,6 +16,7 @@
 
 .modal-dialog-custom .modal-content {
     background: #dbe5f1;
+    font-family: "Quicksand";
 }
 .modal-header-custom {
     border-bottom: 1px solid #008dd7 !important;
@@ -24,6 +25,11 @@
     width: 100%;
 }
 .modal-title p {
+    margin-bottom: 0;
+}
+
+.modal-content p {
+    margin-top: 0.5rem;
     margin-bottom: 0;
 }
 
