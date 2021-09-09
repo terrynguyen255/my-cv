@@ -110,8 +110,8 @@ const me = {
             _en: 'Fishing',
             _vi: 'Câu cá',
         }, {
-            _en: (<a target='_blank' rel='noopener noreferrer' href='https://www.facebook.com/shinigami.nguyen.1414/media_set?set=a.775055715986837&type=3'>Drawing, cooking & DIY</a>),
-            _vi: (<a target='_blank' rel='noopener noreferrer' href='https://www.facebook.com/shinigami.nguyen.1414/media_set?set=a.775055715986837&type=3'>Vẽ, nấu ăn và đồ thủ công</a>),
+            _en: 'Drawing, cooking & DIY',
+            _vi: 'Vẽ, nấu ăn và đồ thủ công',
         }, {
             _en: 'Fixing things (bugs excluded)',
             _vi: 'Sửa chữa này nọ (không bao gồm bug)',
