@@ -5,7 +5,7 @@ hr {
 .main {
     width: 75vw !important;
     background: #dbe5f1;
-    padding: 2.5rem 0;
+    padding-top: 2.5rem;
 }
 
 @media (max-width: 600px) {

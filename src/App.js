@@ -246,7 +246,7 @@ class App extends Component {
                     </div>
                 </div>
 
-                <div className="row section section-dark">
+                <div className="row section section-dark" style={{paddingBottom: '3rem'}}>
                     <div className="col-12">
                         <div className="section-tag"><h3>{t('TAG_MY_PROJECTS')}</h3></div>
                     </div>
