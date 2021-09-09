@@ -83,7 +83,7 @@ const me = {
             _en: 'High sense of responsibility',
             _vi: 'Làm việc có trách nhiệm',
         }, {
-            _en: 'Hard-working and focus',
+            _en: 'Hard-working and focused',
             _vi: 'Làm việc chăm chỉ và tập trung',
         }, {
             _en: 'Good communication and team-working',
