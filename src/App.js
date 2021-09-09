@@ -25,7 +25,7 @@ const me = {
         email: 'nogias9x@gmail.com',
         idCard: '079.193.004.392',
         phone: '0378.678.349',
-        facebook: (<a target='_blank' rel='noopener noreferrer' href='https://www.facebook.com/shinigami.nguyen.1414'>Nguyễn Nhật-Nguyên</a>),
+        facebook: (<a target='_blank' rel='noopener noreferrer' href='https://www.facebook.com/shinigami.nguyen.1414'>Nguyễn Tú</a>),
         github: (<a target='_blank' rel='noopener noreferrer' href='https://github.com/nogias9x'>Nogias9x</a>),
         place: {
             _en: (
