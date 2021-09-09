@@ -24,7 +24,7 @@ export const projects = [
                   Serving at: <a href="https://beta.quod.ai">https://beta.quod.ai</a>
                   <p>QUOD AI is an AI tool that helps developers understand their codebase and write better code.</p>
                   <p>QUOD AI analyzes developers' source-code and provide a real-time Stackoverflow-like system where developers can ask it about their code.</p>
-                  <p>QUOD AI is also communication channel where developers know which members they should discuss with to solve their specific problems.</p>
+                  <p>QUOD AI is also a communication channel where developers know which members they should discuss with to solve their specific problems.</p>
               </div>
             ),
             _vi: (
@@ -55,7 +55,7 @@ export const projects = [
             },
         ],
         from: moment('2019-11-06'),
-        to: moment(),
+        to: moment('2021-06-01'),
         photos: [
             {
                 title: {
@@ -205,7 +205,7 @@ export const projects = [
         about: {
             _en: (
                 <div>
-                    <p>HOME GROUND is an ERP (Enterprise Resource Planning) system that targets Sports Businesses. HOME GROUND is targeted at clubs or sports halls that have physical facilities such as tennis courts, badminton courts, soccer pitches etc.</p>
+                    <p>HOME GROUND is an ERP (Enterprise Resource Planning) system that targets Sports Businesses like clubs or sports halls that have physical facilities such as tennis courts, badminton courts, soccer pitches etc.</p>
                     <p>HOME GROUND provides all the technology that a partner needs to run their business effectively with just 10 minutes of setup.</p>
                     <p>HOME GROUND is can be used by clubs worldwide. It supports multi-tenancy and localisation.</p>
                     <p>By now, HOME GROUND has been used by 140+ partners from 7 countries: Singapore, Australia, Switzerland, India, Malaysia, Indonesia and Afghanistan.</p>
@@ -349,9 +349,9 @@ export const projects = [
         about: {
             _en: (
                 <div>
-                    <p>CHỢ TIN TỨC (Reporters' Market) is a e-marketplace which targets news, especially breaking-news.</p>
-                    <p>CHỢ TIN TỨC is multi-tenancy system. It provide partners (owners of news channels) a management dashboard to sale and buy news, manage their staff and transactions.</p>
-                    <p>CHỢ TIN TỨC also contains an FTP server and a video processing server, so even large HD videos can be uploaded and processed to be sold.</p>
+                    <p>CHỢ TIN TỨC (Reporters' Market) is an e-marketplace which targets news, especially breaking-news.</p>
+                    <p>CHỢ TIN TỨC is multi-tenancy system. It provide partners (owners of news channels) a management dashboard to sale and buy news, manage their staff and orders.</p>
+                    <p>CHỢ TIN TỨC also has an FTP server and a video processing server, so even large HD videos can be uploaded and processed to be sold.</p>
                 </div>
             ),
             _vi: (
