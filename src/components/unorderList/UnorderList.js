@@ -10,32 +10,33 @@ class UnorderList extends Component {
         const defaultColumns = 1
         const columns = this.props.columns || defaultColumns
         const renderedLiElements = this.props.list.map((element, idx) => (<li key={idx}>{getLocalizedValue(element, i18n)}</li>))
+        const defaultStyle = {
+            marginLeft: '-1rem'
+        }
 
         return (
             <Media query="(max-width: 400px)">
-                {matches =>
-                    matches ? (
-                        <ul
-                            style={{
-                                columns: String(defaultColumns),
-                                WebkitColumns: String(defaultColumns),
-                                MozColumns: String(defaultColumns),
-                            }}
-                        >
-                            {renderedLiElements}
-                        </ul>
-                    ) : (
-                        <ul
-                            style={{
-                                columns: String(columns),
-                                WebkitColumns: String(columns),
-                                MozColumns: String(columns),
-                            }}
-                        >
+                {matches => {
+                    const style = matches
+                    ? {
+                        columns: String(defaultColumns),
+                        WebkitColumns: String(defaultColumns),
+                        MozColumns: String(defaultColumns),
+                        ...defaultStyle
+                    }
+                    : {
+                        columns: String(columns),
+                        WebkitColumns: String(columns),
+                        MozColumns: String(columns),
+                        ...defaultStyle
+                    }
+
+                    return (
+                        <ul style={style}>
                             {renderedLiElements}
                         </ul>
                     )
-                }
+                }}
             </Media>
         )
     }

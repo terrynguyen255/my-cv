@@ -160,7 +160,7 @@ class App extends Component {
                     </div>
                 </div>
 
-                <div className="row section-light">
+                <div className="row section section-light">
                     <div className="col-md-4"><
                         Avatar avatar={me.avatar}/>
                     </div>
@@ -184,13 +184,13 @@ class App extends Component {
                         </div>
                     </div>
                 </div>
-                <div className="row section-light">
+                <div className="row section section-light">
                     <div className="col-12">
                         <div className="section-tag"><h3>{t('TAG_MY_EDUCATION')}</h3></div>
                     </div>
                     {
                         me.educations.map((edu, idx) => (
-                            <div className="col-12" key={idx} style={{paddingLeft: '2rem'}}>
+                            <div className="col-12 section-content" key={idx} style={{paddingLeft: '2rem'}}>
                                 <h5><b>{getLocalizedValue(edu.school, i18n)}</b></h5>
                                 <div style={{paddingLeft: '2rem'}}>
                                     <b>{t('FROM')}</b>: {getLocalizedValue(edu.from, i18n)}<br/>
@@ -202,11 +202,11 @@ class App extends Component {
                     }
                 </div>
 
-                <div className="row section-dark">
+                <div className="row section section-dark">
                     <div className="col-12">
                         <div className="section-tag"><h3>{t('TAG_MY_TARGETS')}</h3></div>
                     </div>
-                    <div className="col-12">
+                    <div className="col-12 section-content">
                         {t('TARGETS_INTRO')}
                         <UnorderList list={me.targets} columns={1}/>
                     </div>
@@ -214,7 +214,7 @@ class App extends Component {
                     <div className="col-12">
                         <div className="section-tag"><h3>{t('TAG_MY_SKILLS')}</h3></div>
                     </div>
-                    <div className="col-12">
+                    <div className="col-12 section-content">
                         {
                             skills.map((skill, idx) => (
                                 <Skill key={idx} skill={skill}/>
@@ -223,25 +223,30 @@ class App extends Component {
                     </div>
                 </div>
 
-                <div className="row section-light">
+                <div className="row section section-light">
                     <div className="col-12">
                         <div className="row">
                             <div className="col-12">
                                 <div className="section-tag"><h3>{t('TAG_MY_STRENGTHS')}</h3></div>
+                            </div>
+                            <div className="col-12 section-content">
                                 <UnorderList list={me.strengths} columns={2} stubborn={false}/>
                             </div>
                         </div>
                         <hr/>
+
                         <div className="row">
                             <div className="col-12">
                                 <div className="section-tag"><h3>{t('TAG_MY_HOBBIES')}</h3></div>
+                            </div>
+                            <div className="col-12 section-content">
                                 <UnorderList list={me.hobbies} columns={2} stubborn={false}/>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div className="row section-dark">
+                <div className="row section section-dark">
                     <div className="col-12">
                         <div className="section-tag"><h3>{t('TAG_MY_PROJECTS')}</h3></div>
                     </div>
@@ -249,7 +254,7 @@ class App extends Component {
                         projects.map((p, idx) => (
                             <div
                                 key={idx}
-                                className="col-md-2 col-6"
+                                className="col-md-2 col-6 section-content"
                                 style={{paddingRight: 0, marginBottom: '1rem'}}
                             >
                                 <Project project={p}/>

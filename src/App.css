@@ -6,7 +6,6 @@ hr {
     width: 75vw !important;
     background: #dbe5f1;
     padding: 2.5rem 0;
-
 }
 
 @media (max-width: 600px) {
@@ -19,19 +18,23 @@ hr {
     }
 }
 
+.section {
+    margin: 0.6rem 0;
+    padding: 0.6rem 1rem;
+    font-family: "Quicksand";
+}
+
 .section-light {
     background: #dbe5f1;
-    margin: 0.6rem 0 0.6rem 0;
-    padding: 0.6rem 0 0.6rem 0;
-    font-family: "Quicksand";
 }
 
 .section-dark {
     background: #365f91;
     color: white;
-    margin: 0.6rem 0 0.6rem 0;
-    padding: 0.6rem 0 0.6rem 0;
-    font-family: "Quicksand";
+}
+
+.section-content {
+    padding: 0 3rem !important;
 }
 
 .name {
