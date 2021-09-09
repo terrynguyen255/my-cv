@@ -1,11 +1,14 @@
 export const skills = [
     {
         name: 'ReactJS',
-        points: 8,
+        points: 9,
         description: {
-            _en: `1.5 year exp in React, Redux, Saga`,
+            _en: `2 year exp in React, Redux, Saga`,
             _vi: `2 năm KN với React, Redux, Saga`,
         },
+    }, {
+        name: 'React Native',
+        points: 7,
     }, {
         name: 'Python',
         points: 7,
@@ -17,15 +20,15 @@ export const skills = [
         name: 'NodeJS',
         points: 9,
         description: {
-            _en: `2 years exp in Express-Sequelize`,
-            _vi: `2 năm KN với Express-Sequelize`,
+            _en: `2.5 years exp in Express-Sequelize`,
+            _vi: `2.5 năm KN với Express-Sequelize`,
         },
     }, {
-        name: 'SQL',
+        name: 'SQL databases',
         points: 8,
         description: {
-            _en: `2.5 years exp`,
-            _vi: `2.5 năm KN`,
+            _en: `3 years exp`,
+            _vi: `3 năm KN`,
         },
     }, {
         name: {
@@ -33,7 +36,6 @@ export const skills = [
             _vi: `Thiết kế giao diện`,
         },
         points: 8,
-        description: '',
     }, {
         name: {
             _en: `English`,
