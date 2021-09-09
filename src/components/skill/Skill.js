@@ -18,10 +18,10 @@ class Skill extends Component {
             }
         }
         return (
-            <div className="row skill-container">
-                <div className="skill-name col-md-3"><b>{getLocalizedValue(this.props.skill.name, i18n)}:</b></div>
-                <div className="skill-points-bar col-md-4">{pointsElements}</div>
-                <div className="skill-description col-md-5">{getLocalizedValue(this.props.skill.description, i18n)}</div>
+            <div className="skill-container">
+                <div className="skill-name"><b>{getLocalizedValue(this.props.skill.name, i18n)}:</b></div>
+                <div className="skill-points-bar">{pointsElements}</div>
+                <div className="skill-description">{getLocalizedValue(this.props.skill.description, i18n)}</div>
             </div>
         )
     }

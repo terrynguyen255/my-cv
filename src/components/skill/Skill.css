@@ -15,10 +15,25 @@
     background: #f3cf41;
 }
 
+.skill-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.skill-name {
+    min-width: 10rem;
+}
+
+.skill-points-bar {
+    flex: 1;
+    min-width: 15rem;
+}
+
+.skill-description {
+    flex: 1;
+}
+
 @media (max-width: 600px) {
-    .skill-name {
-        text-align: left;
-    }
     .skill-container {
         margin-bottom: 1.5rem;
     }
@@ -26,14 +41,12 @@
 
 @media (min-width: 600px) {
     .skill-name {
-        text-align: right;
+        margin-right: 0.3rem;
     }
     .skill-points-bar {
         padding: 0 !important;;
-        margin-left: -0.3rem;
     }
     .skill-description {
         padding: 0 !important;
-        margin-left: -2rem;
     }
 }
