@@ -166,7 +166,7 @@ class App extends Component {
                     </div>
                     <div className="col-md-8">
                         <h1 className="name">{getLocalizedValue(me.fullname, i18n)}</h1>
-                        <h1 className="title">FULL STACK DEVELOPER</h1>
+                        <h1 className="title">SENIOR FULL STACK DEVELOPER</h1>
 
                         <div className="row" style={{marginTop: '4rem'}}>
                             {
