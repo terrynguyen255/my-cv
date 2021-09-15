@@ -225,16 +225,6 @@ class App extends Component {
                                 <UnorderList list={me.strengths} columns={2} stubborn={false}/>
                             </div>
                         </div>
-                        <hr/>
-
-                        <div className="row">
-                            <div className="col-12">
-                                <div className="section-tag"><h3>{t('TAG_MY_HOBBIES')}</h3></div>
-                            </div>
-                            <div className="col-12 section-content">
-                                <UnorderList list={me.hobbies} columns={2} stubborn={false}/>
-                            </div>
-                        </div>
                     </div>
                 </div>
 
