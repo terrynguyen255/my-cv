@@ -204,14 +204,6 @@ class App extends Component {
 
                 <div className="row section section-dark">
                     <div className="col-12">
-                        <div className="section-tag"><h3>{t('TAG_MY_TARGETS')}</h3></div>
-                    </div>
-                    <div className="col-12 section-content">
-                        {t('TARGETS_INTRO')}
-                        <UnorderList list={me.targets} columns={1}/>
-                    </div>
-                    <div className="col-12"><hr/></div>
-                    <div className="col-12">
                         <div className="section-tag"><h3>{t('TAG_MY_SKILLS')}</h3></div>
                     </div>
                     <div className="col-12 section-content">
