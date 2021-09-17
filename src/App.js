@@ -41,22 +41,17 @@ const me = {
     },
     educations: [{
         school: {
-            _en: 'University of Science (Viet Nam National University Ho Chi Minh City)',
+            _en: 'University of Science (Viet Nam National University)',
             _vi: 'Đại học Khoa học Tự nhiên (Đại học Quốc gia Thành phố Hồ Chí Minh)',
         },
         from: {
             _en: moment('2012-09-01').format('MMM-YYYY'),
             _vi: moment('2012-09-01').format('MM/YYYY'),
         },
-        major: {
-            _en: 'Software Engineering',
-            _vi: 'Kỹ thuật Phần mềm',
-        },
         degree: {
-            _en: 'Bachelor of Science',
+            _en: 'B.S Software Engineering',
             _vi: 'Cử nhân',
         },
-        gpa: '7.31/10',
     }],
     exps: [{
         title: 'Software Engineer & Senior Software Engineer, Quod AI',
@@ -290,11 +285,9 @@ class App extends Component {
                     {
                         me.educations.map((edu, idx) => (
                             <div className="col-12 section-content" key={idx} style={{paddingLeft: '2rem'}}>
-                                <h5><b>{getLocalizedValue(edu.school, i18n)}</b></h5>
+                                <h5><b>{getLocalizedValue(edu.degree, i18n)}</b></h5>
                                 <div style={{paddingLeft: '2rem'}}>
-                                    <b>{t('FROM')}</b>: {getLocalizedValue(edu.from, i18n)}<br/>
-                                    <b>{t('MAJOR')}</b>: {getLocalizedValue(edu.degree, i18n)} {t('CONJ_IN_MAJOR')} {getLocalizedValue(edu.major, i18n)}<br/>
-                                    <b>{t('GPA')}</b>: {edu.gpa}<br/>
+                                    {getLocalizedValue(edu.school, i18n)} ({getLocalizedValue(edu.from, i18n)})
                                 </div>
                             </div>
                         ))
