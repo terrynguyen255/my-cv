@@ -183,17 +183,6 @@ const me = {
     ],
 }
 
-const languages = [
-    {
-        code: '_en',
-        flag: `${process.env.PUBLIC_URL}/images/language-en.png`
-    },
-    {
-        code: '_vi',
-        flag: `${process.env.PUBLIC_URL}/images/language-vn.png`
-    }
-]
-
 class App extends Component {
     constructor(props) {
         super(props)
@@ -209,21 +198,6 @@ class App extends Component {
 
         return (
             <div className="container main">
-                <div className="row">
-                    <div className="col-12">
-                        {
-                            languages.map((lang, idx) => (
-                                <button
-                                    key={idx}
-                                    className="toggle-language-button"
-                                    style={{backgroundImage: `url('${lang.flag}')`}}
-                                    onClick={() => this.changeLanguage(i18n, lang.code)}
-                                />
-                            ))
-                        }
-                    </div>
-                </div>
-
                 <div className="row section section-light">
                     <div className="col-md-4"><
                         Avatar avatar={me.avatar}/>
