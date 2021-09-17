@@ -1,10 +1,12 @@
 {
   "TAG_MY_EDUCATION": "HỌC VẤN",
+  "TAG_MY_WORKING_EXPERIENCE": "KINH NGHIỆM",
   "TAG_MY_SKILLS": "KỸ NĂNG",
   "TAG_MY_STRENGTHS": "ƯU ĐIỂM",
   "TAG_MY_PROJECTS": "DỰ ÁN",
 
   "DATE_FORMAT": "DD/MM/YYYY",
+  "MONTH_FORMAT": "MM/YYYY",
   "CONJ_IN_MAJOR": "",
   "FROM": "Khóa",
   "MAJOR": "Chuyên ngành",

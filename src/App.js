@@ -58,6 +58,71 @@ const me = {
         },
         gpa: '7.31/10',
     }],
+    exps: [{
+        title: 'Software Engineer & Senior Software Engineer, Quod AI',
+        duration: {
+            from: moment('2019-11-06'),
+            to: moment('2021-06-01'),
+        },
+        descriptions: [
+            {
+                _en: 'Created a QuodAI web for users with ReactJS & NodeJS with big database underneath.',
+                _vi: '',
+            }, {
+                _en: 'Created an internal tool for data labeling & processing.',
+                _vi: '',
+            }, {
+                _en: 'Powered searching with Elasticsearch.',
+                _vi: '',
+            }, {
+                _en: 'Managed database migration.',
+                _vi: '',
+            }, {
+                _en: 'Integrated version-control platforms such as Github, Gitlab & Bitbucket into the systems.',
+                _vi: '',
+            }, {
+                _en: 'Quickly responed to user issues and bug reports. Improved systems with short-term & long-term solutions.',
+                _vi: '',
+            }, {
+                _en: 'Questioned & analyzed about user needs to bring the best values in each deliveries.',
+                _vi: '',
+            }
+        ]
+    },
+    {
+        title: 'Software Engineer, Rockship',
+        duration: {
+            from: moment('2017-09-09'),
+            to: moment('2019-03-21'),
+        },
+        descriptions: [
+            {
+                _en: 'Created backend services with NodeJS & Python-Flask.',
+                _vi: '',
+            },
+            {
+                _en: 'Integrated 3th-party services such as VOIP, Stripe Connect (a payment platform for marketplaces), Kill Bill (a billing & subscriptions manamagement system), etc.',
+                _vi: '',
+            },
+            {
+                _en: 'Responsed & discussed about UI to improve designed designs.',
+                _vi: '',
+            },
+        ]
+    },
+    {
+        title: 'Intern & Software Engineer, Fsoft',
+        duration: {
+            from: moment('2016-01-01'),
+            to: moment('2017-02-01'),
+        },
+        descriptions: [
+            {
+                _en: 'Mantained an Android app for comics & manga reading platform - Shonen Jump',
+                _vi: '',
+            }
+        ]
+    }],
     avatar: {
         src: `${process.env.PUBLIC_URL}/images/avatar.png`,
         sizeWidth: '160%',
@@ -183,6 +248,67 @@ class App extends Component {
                         </div>
                     </div>
                 </div>
+
+                <div className="row section section-dark">
+                    <div className="col-12">
+                        <div className="section-tag"><h3>{t('TAG_MY_SKILLS')}</h3></div>
+                    </div>
+                    <div className="col-12 section-content">
+                        {
+                            skills.map((skill, idx) => (
+                                <Skill key={idx} skill={skill}/>
+                            ))
+                        }
+                    </div>
+
+                    <div className="col-12">
+                        <hr/>
+                    </div>
+
+                    <div className="col-12">
+                        <div className="row">
+                            <div className="col-12">
+                                <div className="section-tag"><h3>{t('TAG_MY_STRENGTHS')}</h3></div>
+                            </div>
+                            <div className="col-12 section-content">
+                                <UnorderList list={me.strengths} columns={2} stubborn={false}/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="row section section-light">
+                    <div className="col-12">
+                        <div className="section-tag"><h3>{t('TAG_MY_WORKING_EXPERIENCE')}</h3></div>
+                    </div>
+                    {
+                        me.exps.map((exp, idx) => (
+                            <div className="col-12 section-content" key={idx} style={{paddingLeft: '2rem'}}>
+                                <h5>
+                                    <b>{getLocalizedValue(exp.title, i18n)}</b>&nbsp;
+                                    (
+                                        {exp.duration.from.format(t('MONTH_FORMAT'))}
+                                        &nbsp;-&nbsp;
+                                        {exp.duration.to.format(t('MONTH_FORMAT'))}
+                                    )
+                                </h5>
+                                <div>
+                                    <ul>
+                                        {
+                                            exp.descriptions.map(des => (
+                                                <li>
+                                                    {getLocalizedValue(des, i18n)}
+                                                </li>
+                                            ))
+                                        }
+                                    </ul>
+                                    
+                                </div>
+                            </div>
+                        ))
+                    }
+                </div>
+
                 <div className="row section section-light">
                     <div className="col-12">
                         <div className="section-tag"><h3>{t('TAG_MY_EDUCATION')}</h3></div>
@@ -201,32 +327,7 @@ class App extends Component {
                     }
                 </div>
 
-                <div className="row section section-dark">
-                    <div className="col-12">
-                        <div className="section-tag"><h3>{t('TAG_MY_SKILLS')}</h3></div>
-                    </div>
-                    <div className="col-12 section-content">
-                        {
-                            skills.map((skill, idx) => (
-                                <Skill key={idx} skill={skill}/>
-                            ))
-                        }
-                    </div>
-                </div>
-
-                <div className="row section section-light">
-                    <div className="col-12">
-                        <div className="row">
-                            <div className="col-12">
-                                <div className="section-tag"><h3>{t('TAG_MY_STRENGTHS')}</h3></div>
-                            </div>
-                            <div className="col-12 section-content">
-                                <UnorderList list={me.strengths} columns={2} stubborn={false}/>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
+                
                 <div className="row section section-dark" style={{paddingBottom: '3rem'}}>
                     <div className="col-12">
                         <div className="section-tag"><h3>{t('TAG_MY_PROJECTS')}</h3></div>
