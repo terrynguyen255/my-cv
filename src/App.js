@@ -18,10 +18,7 @@ const me = {
         _vi: 'TÚ NGUYỄN',
     },
     commonInfo: {
-        dob: {
-            _en: 'Nov 14, 1993',
-            _vi: '14/11/1993',
-        },
+        dob: 'Nov 1993',
         email: 'nogias9x@gmail.com',
         idCard: '079.193.004.392',
         phone: '0378.678.349',
@@ -261,7 +258,7 @@ class App extends Component {
 
 
                     <div className="col-12">
-                <hr/>
+                        <hr/>
                     </div>
 
                     <div className="col-12">
