@@ -260,8 +260,30 @@ class App extends Component {
                     }
                 </div>
 
+                <hr/>
+
                 <div className="row section section-light">
                     <div className="col-12">
+                        <div className="section-tag"><h3>{t('TAG_MY_PROJECTS')}</h3></div>
+                    </div>
+                    <div className="row col-12 section-content" >
+                    {
+                        projects.map((p, idx) => (
+                            <div
+                                key={idx}
+                                className="col-md-2 col-6"
+                                style={{padding: '0', marginBottom: '1rem'}}
+                            >
+                                <Project project={p}/>
+                            </div>
+                        ))
+                    }
+                    </div>
+                </div>
+
+                
+                <div className="row section section-dark" style={{paddingBottom: '3rem'}}>
+                <div className="col-12">
                         <div className="section-tag"><h3>{t('TAG_MY_EDUCATION')}</h3></div>
                     </div>
                     {
@@ -271,24 +293,6 @@ class App extends Component {
                                 <div style={{paddingLeft: '2rem'}}>
                                     {getLocalizedValue(edu.school, i18n)} ({getLocalizedValue(edu.from, i18n)})
                                 </div>
-                            </div>
-                        ))
-                    }
-                </div>
-
-                
-                <div className="row section section-dark" style={{paddingBottom: '3rem'}}>
-                    <div className="col-12">
-                        <div className="section-tag"><h3>{t('TAG_MY_PROJECTS')}</h3></div>
-                    </div>
-                    {
-                        projects.map((p, idx) => (
-                            <div
-                                key={idx}
-                                className="col-md-2 col-6 section-content"
-                                style={{paddingRight: 0, marginBottom: '1rem'}}
-                            >
-                                <Project project={p}/>
                             </div>
                         ))
                     }
