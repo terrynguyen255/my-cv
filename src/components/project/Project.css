@@ -4,6 +4,7 @@
     box-shadow: rgb(0 0 0 / 50%) 0px 4px 6px;
 }
 .project-avatar:hover {
+    cursor: pointer;
 }
 
 .project-logo-container {
