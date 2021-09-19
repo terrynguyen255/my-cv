@@ -60,28 +60,13 @@ const me = {
             to: moment('2021-06-01'),
         },
         descriptions: [
-            {
-                _en: 'Created a QuodAI web for users with ReactJS & NodeJS with big database underneath.',
-                _vi: '',
-            }, {
-                _en: 'Created an internal tool for data labeling & processing.',
-                _vi: '',
-            }, {
-                _en: 'Powered searching with Elasticsearch.',
-                _vi: '',
-            }, {
-                _en: 'Managed database migration.',
-                _vi: '',
-            }, {
-                _en: 'Integrated version-control platforms such as Github, Gitlab & Bitbucket into the systems.',
-                _vi: '',
-            }, {
-                _en: 'Quickly responed to user issues and bug reports. Improved systems with short-term & long-term solutions.',
-                _vi: '',
-            }, {
-                _en: 'Questioned & analyzed about user needs to bring the best values in each deliveries.',
-                _vi: '',
-            }
+            'Created QuodAI web for users with ReactJS & NodeJS with big database underneath.',
+            'Created an internal tool for data labeling & processing.',
+            'Powered searching with Elasticsearch.',
+            'Managed database migration.',
+            'Integrated version-control platforms such as Github, Gitlab & Bitbucket into the systems.',
+            'Quickly responed to user issues and bug reports. Improved systems with short-term & long-term solutions.',
+            'Questioned & analyzed about user needs to bring the best values in each deliveries.',
         ]
     },
     {
@@ -91,18 +76,9 @@ const me = {
             to: moment('2019-03-21'),
         },
         descriptions: [
-            {
-                _en: 'Created backend services with NodeJS & Python-Flask.',
-                _vi: '',
-            },
-            {
-                _en: 'Integrated 3th-party services such as VOIP, Stripe Connect (a payment platform for marketplaces), Kill Bill (a billing & subscriptions manamagement system), etc.',
-                _vi: '',
-            },
-            {
-                _en: 'Responsed & discussed about UI to improve designed designs.',
-                _vi: '',
-            },
+            'Created backend services with NodeJS & Python-Flask.',
+            'Integrated 3th-party services such as VOIP, Stripe Connect (a payment platform for marketplaces), Kill Bill (a billing & subscriptions manamagement system), etc.',
+            'Responsed & discussed about UI to improve designed designs.',
         ]
     },
     {
@@ -112,10 +88,7 @@ const me = {
             to: moment('2017-02-01'),
         },
         descriptions: [
-            {
-                _en: 'Mantained an Android app for comics & manga reading platform - Shonen Jump',
-                _vi: '',
-            }
+            'Mantained an Android app for comics & manga reading platform - Shonen Jump',
         ]
     }],
     avatar: {
