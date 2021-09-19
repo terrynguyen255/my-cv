@@ -380,7 +380,7 @@ export const projects = [
             description: ``
         }],
         from: moment('2018-11-01'),
-        to: moment(),
+        to: moment('2019-05-01'),
         photos: [
             {
                 title: {
