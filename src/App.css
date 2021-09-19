@@ -2,10 +2,11 @@ hr {
     border: 1px solid #008dd7 !important;
 }
 
+#root {
+    background: linear-gradient(150deg, #0E1824 10%, #C5DEFC 100%);
+}
 .main {
     width: 75vw !important;
-    background: #dbe5f1;
-    padding-top: 2.5rem;
 }
 
 @media (max-width: 600px) {

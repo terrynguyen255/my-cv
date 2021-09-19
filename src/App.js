@@ -258,11 +258,12 @@ class App extends Component {
                             </div>
                         ))
                     }
-                </div>
 
+
+                    <div className="col-12">
                 <hr/>
+                    </div>
 
-                <div className="row section section-light">
                     <div className="col-12">
                         <div className="section-tag"><h3>{t('TAG_MY_PROJECTS')}</h3></div>
                     </div>
