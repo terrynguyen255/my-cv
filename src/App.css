@@ -61,6 +61,7 @@ hr {
     height: 3.2rem;
     margin-bottom: 1rem;
     border-radius: 0.6rem;
+    box-shadow: rgb(0 0 0 / 50%) 0px 4px 6px;
 }
 
 .section-tag h3 {
