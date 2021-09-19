@@ -1,9 +1,9 @@
 import React, {Component} from 'react';
 import { withNamespaces } from 'react-i18next';
-import './Skill.css'
+import './SkillPoints.css'
 import {getLocalizedValue} from "../../helpers/languageHelper";
 
-class Skill extends Component {
+class SkillPoints extends Component {
     render() {
         const { i18n } = this.props;
         let pointsElements = []
@@ -26,4 +26,4 @@ class Skill extends Component {
         )
     }
 }
-export default withNamespaces('componentSkill')(Skill);
+export default withNamespaces('componentSkill')(SkillPoints);

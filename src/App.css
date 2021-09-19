@@ -74,3 +74,19 @@ hr {
     justify-content: center;
     font-style: italic;
 }
+
+.skill-group {
+    display: flex;
+}
+.skill-group-name {
+    min-width: fit-content;
+    width: 6rem;
+    font-weight: bold;
+}
+.skill-tags {
+    flex: 1;
+    
+}
+.skill-tags > div {
+    margin-right: 0.5rem;
+}

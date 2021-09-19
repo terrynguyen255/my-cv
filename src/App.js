@@ -2,11 +2,11 @@ import React, {Component} from 'react';
 import './App.css';
 import { withNamespaces } from 'react-i18next';
 import InfoField from "./components/infoField/InforField";
-import Skill from "./components/skill/Skill";
+import SkillTag from "./components/skill/SkillTag";
 import UnorderList from "./components/unorderList/UnorderList";
 import Project from "./components/project/Project";
 import {projects} from "./resources/projects";
-import {skills} from "./resources/skills";
+import {skillGroups} from "./resources/skills";
 import {Avatar} from "./components/avatar/Avatar";
 import {getLocalizedValue} from "./helpers/languageHelper";
 const moment = require('moment')
@@ -197,8 +197,17 @@ class App extends Component {
                     </div>
                     <div className="col-12 section-content">
                         {
-                            skills.map((skill, idx) => (
-                                <Skill key={idx} skill={skill}/>
+                            skillGroups.map((skillGroup, idx) => (
+                                <div className="skill-group">
+                                    <div className="skill-group-name">{skillGroup.name}:</div>
+                                    <div className="skill-tags">
+                                        {
+                                            skillGroup.skills.map((skill, idx) => (
+                                                <SkillTag key={idx} skill={skill}/>
+                                            ))
+                                        }
+                                    </div>
+                                </div>
                             ))
                         }
                     </div>
