@@ -29,12 +29,18 @@ export const skillGroups = [
                 },
             }, {
                 name: 'Python',
-                points: 7,
+                points: 8,
                 description: {
-                    _en: `9 months exp in Flask-SqlAlchemy`,
-                    _vi: `9 tháng KN với Flask-SqlAlchemy`,
+                    _en: `1.5 years exp in Flask-SqlAlchemy-MongoEngine`,
+                    _vi: `1.5 năm KN với Flask-SqlAlchemy-MongoEngine`,
                 },
-            }
+            }, {
+                name: 'GCP',
+                points: 8,
+            }, {
+                name: 'Kubernetes',
+                points: 8,
+            }, 
         ]
     }, {
         name: 'Database',
@@ -46,6 +52,9 @@ export const skillGroups = [
                     _en: `3 years exp`,
                     _vi: `3 năm KN`,
                 }
+            }, {
+                name: 'MongoDB',
+                points: 7,
             }, {
                 name: 'Elasticsearch',
                 points: 7,
@@ -59,8 +68,8 @@ export const skillGroups = [
         skills: [
             {
                 name: {
-                    _en: `UI designing`,
-                    _vi: `Thiết kế giao diện`,
+                    _en: `UI/UX`,
+                    _vi: `Giao diện & trải nghiệm người dùng`,
                 },
                 points: 8,
             }, {
