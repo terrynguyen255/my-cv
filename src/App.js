@@ -14,8 +14,8 @@ const moment = require('moment')
 
 const me = {
     fullname: {
-        _en: 'TU NGUYEN',
-        _vi: 'TÚ NGUYỄN',
+        _en: 'TERRY TU NGUYEN',
+        _vi: 'TERRY TÚ NGUYỄN',
     },
     commonInfo: {
         dob: '1993',
