@@ -21,7 +21,6 @@ export const projects = [
         about: {
             _en: (
               <div>
-                  Serving at: <a href="https://beta.quod.ai">https://beta.quod.ai</a>
                   <p>QUOD AI is an AI tool that helps developers understand their codebase and write better code.</p>
                   <p>QUOD AI analyzes developers' source-code and provide a real-time Stackoverflow-like system where developers can ask it about their code.</p>
                   <p>QUOD AI is also a communication channel where developers know which members they should discuss with to solve their specific problems.</p>
@@ -29,7 +28,6 @@ export const projects = [
             ),
             _vi: (
               <div>
-                  Tại: <a href="https://beta.quod.ai">https://beta.quod.ai</a>
                   <p>QUOD AI là một công cụ sử dụng trí tuệ nhân tạo để giúp lập trình viên hiểu source-code và viết code tốt hơn.</p>
                   <p>QUOD AI phân tích source-code của developer và đưa ra 1 hệ thống câu hỏi tương tự như Stackoverflow để người dùng có thể hỏi về source-code của mình.</p>
                   <p>QUOD AI cũng là 1 kênh giao tiếp nơi developer có thể biết mình cần trao đổi với ai để giải quyết vấn đề cụ thể của mình.</p>
@@ -50,7 +48,7 @@ export const projects = [
         teamSize: 9,
         myRoles: [
             {
-                name: 'Full stack dev',
+                name: 'Senior full-stack dev',
                 description: ``
             },
         ],
