@@ -1,19 +1,31 @@
 .project-avatar {
     float: left;
-    border-radius: 0.5rem;
-    box-shadow: rgb(0 0 0 / 50%) 0px 4px 6px;
 }
 .project-avatar:hover {
     cursor: pointer;
+
 }
 
 .project-logo-container {
+    display: flex;
+    flex-direction: column;
     max-width: 6rem;
     margin: auto;
+    background-color: transparent;
+    align-items: center;
 }
 .project-logo-container > img {
     width: 100%;
     border-radius: 0.5rem;
+}
+.project-logo-container:hover > img {
+    box-shadow: rgb(0 0 0 / 50%) 0px 4px 6px;
+}
+.project-logo-container > a {
+    margin-top: 0.3125rem;
+}
+.project-logo-container:hover > a {
+    text-decoration: underline;
 }
 
 .modal-dialog-custom .modal-content {
