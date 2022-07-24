@@ -22,7 +22,6 @@ class InfoField extends Component {
 const _getIconPath = (type) => {
     if (type === 'dob') return `${process.env.PUBLIC_URL}/images/icon-dob.svg`
     if (type === 'email') return `${process.env.PUBLIC_URL}/images/icon-email.svg`
-    if (type === 'idCard') return `${process.env.PUBLIC_URL}/images/icon-idCard.svg`
     if (type === 'phone') return `${process.env.PUBLIC_URL}/images/icon-phone.svg`
     if (type === 'place') return `${process.env.PUBLIC_URL}/images/icon-place.svg`
     if (type === 'facebook') return `${process.env.PUBLIC_URL}/images/icon-facebook.svg`

@@ -18,9 +18,8 @@ const me = {
         _vi: 'TÚ NGUYỄN',
     },
     commonInfo: {
-        dob: 'Nov 1993',
-        email: 'nogias9x@gmail.com',
-        idCard: '079.193.004.392',
+        dob: '1993',
+        email: 'terry.tu.nguyen@gmail.com',
         phone: '0378.678.349',
         facebook: (<a target='_blank' rel='noopener noreferrer' href='https://www.facebook.com/shinigami.nguyen.1414'>Nguyễn Tú</a>),
         place: {
