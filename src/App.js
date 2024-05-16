@@ -23,16 +23,8 @@ const me = {
         phone: '0378.678.349',
         facebook: (<a target='_blank' rel='noopener noreferrer' href='https://www.facebook.com/shinigami.nguyen.1414'>Nguyễn Tú</a>),
         place: {
-            _en: (
-                <a target='_blank' rel='noopener noreferrer' href='https://tinyurl.com/y5dvobem'>
-                    613 Huỳnh Tấn Phát Street, District 7, HCMC
-                </a>
-            ),
-            _vi: (
-                <a target='_blank' rel='noopener noreferrer' href='https://tinyurl.com/y5dvobem'>
-                    613 Huỳnh Tấn Phát, Quận 7, TP.HCM
-                </a>
-            ),
+            _en: "District 7, HCMC",
+            _vi: "Quận 7, TP.HCM",
         },
     },
     educations: [{
