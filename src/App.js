@@ -21,7 +21,7 @@ const me = {
         dob: '1993',
         email: 'terry.tu.nguyen@gmail.com',
         phone: '0378.678.349',
-        facebook: (<a target='_blank' rel='noopener noreferrer' href='https://www.facebook.com/shinigami.nguyen.1414'>Nguyễn Tú</a>),
+        linkedin: (<a target='_blank' rel='noopener noreferrer' href='https://www.linkedin.com/in/terry-tu-nguyen'>Terry Tú Nguyễn</a>),
         place: {
             _en: "District 7, HCMC",
             _vi: "Quận 7, TP.HCM",

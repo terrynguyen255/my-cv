@@ -25,6 +25,7 @@ const _getIconPath = (type) => {
     if (type === 'phone') return `${process.env.PUBLIC_URL}/images/icon-phone.svg`
     if (type === 'place') return `${process.env.PUBLIC_URL}/images/icon-place.svg`
     if (type === 'facebook') return `${process.env.PUBLIC_URL}/images/icon-facebook.svg`
+    if (type === 'linkedin') return `${process.env.PUBLIC_URL}/images/icon-linkedin.svg`
     if (type === 'github') return `${process.env.PUBLIC_URL}/images/icon-github.svg`
 }
 export default withNamespaces('componentApp')(InfoField);
