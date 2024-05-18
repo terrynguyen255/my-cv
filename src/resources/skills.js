@@ -6,8 +6,8 @@ export const skillGroups = [
                 name: 'ReactJS',
                 points: 9,
                 description: {
-                    _en: `2 year exp in React, Redux, Saga`,
-                    _vi: `2 năm KN với React, Redux, Saga`,
+                    _en: `3 year exp in React, Redux, Saga`,
+                    _vi: `3 năm KN với React, Redux, Saga`,
                 },
             }, {
                 name: 'React Native',
@@ -29,10 +29,10 @@ export const skillGroups = [
                 },
             }, {
                 name: 'Python',
-                points: 8,
+                points: 9,
                 description: {
-                    _en: `1.5 years exp in Flask-SqlAlchemy-MongoEngine`,
-                    _vi: `1.5 năm KN với Flask-SqlAlchemy-MongoEngine`,
+                    _en: `3.5 years exp in Flask-SqlAlchemy-MongoEngine`,
+                    _vi: `3.5 năm KN với Flask-SqlAlchemy-MongoEngine`,
                 },
             }, {
                 name: 'GCP',
@@ -54,7 +54,11 @@ export const skillGroups = [
                 }
             }, {
                 name: 'MongoDB',
-                points: 7,
+                points: 8,
+                description: {
+                    _en: `2.5 years exp`,
+                    _vi: `2.5 năm KN`,
+                }
             }, {
                 name: 'Elasticsearch',
                 points: 7,
@@ -74,18 +78,13 @@ export const skillGroups = [
                 points: 8,
             }, {
                 name: {
-                    _en: `Photoshop`,
-                },
-                points: 6,
-            }, {
-                name: {
                     _en: `English`,
                     _vi: `Tiếng Anh`,
                 },
                 points: 8,
                 description: {
-                    _en: `Intermediate`,
-                    _vi: `Trung cấp`,
+                    _en: `Intermediate - IELTS 6.0`,
+                    _vi: `Trung cấp - IELTS 6.0`,
                 },
             }
         ]
