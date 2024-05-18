@@ -86,18 +86,7 @@ const me = {
         positionX: '60%',
         positionY: '35%',
     },
-    targets: [
-        {
-            _en: 'To be a senior backend and frontend developer',
-            _vi: 'Trờ thành senior developer mảng backend và frontend',
-        }, {
-            _en: 'To use English fluently (100+ TOEFL)',
-            _vi: 'Sử dụng tiếng Anh thuần thục (100+ TOEFL)',
-        }, {
-            _en: 'To be a leader 2+ projects which has 4+ members',
-            _vi: 'Quản lý 2+ dự án có 4+ thành viên',
-        }
-    ],
+    targets: [],
     strengths: [
         {
             _en: 'High sense of responsibility',
