@@ -171,8 +171,8 @@ class App extends Component {
                     </div>
                     <div className="col-12 section-content">
                         {
-                            skillGroups.map((skillGroup, idx) => (
-                                <div className="skill-group">
+                            skillGroups.map((skillGroup, gIdx) => (
+                                <div className="skill-group" key={gIdx}>
                                     <div className="skill-group-name">{skillGroup.name}:</div>
                                     <div className="skill-tags">
                                         {
@@ -220,8 +220,8 @@ class App extends Component {
                                 <div>
                                     <ul>
                                         {
-                                            exp.descriptions.map(des => (
-                                                <li>
+                                            exp.descriptions.map((des, idx) => (
+                                                <li key={idx}>
                                                     {getLocalizedValue(des, i18n)}
                                                 </li>
                                             ))
