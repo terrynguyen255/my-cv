@@ -89,11 +89,11 @@ const me = {
     targets: [],
     strengths: [
         {
+            _en: 'Focusing on added value for my customers & company',
+            _vi: 'Quyết định dựa trên lợi ích của khách hàng và công ty',
+        }, {
             _en: 'High sense of responsibility',
             _vi: 'Làm việc có trách nhiệm',
-        }, {
-            _en: 'Hard-working and focused',
-            _vi: 'Làm việc chăm chỉ và tập trung',
         }, {
             _en: 'Good communication and team-working',
             _vi: 'Có kỹ năng làm việc nhóm',
@@ -116,14 +116,11 @@ const me = {
             _en: 'Reading books',
             _vi: 'Đọc sách',
         }, {
-            _en: 'Fishing',
-            _vi: 'Câu cá',
-        }, {
             _en: 'Drawing, cooking & DIY',
             _vi: 'Vẽ, nấu ăn và đồ thủ công',
         }, {
-            _en: 'Fixing things (bugs excluded)',
-            _vi: 'Sửa chữa này nọ (không bao gồm bug)',
+            _en: 'Fixing things',
+            _vi: 'Sửa chữa này nọ',
         },
     ],
 }
