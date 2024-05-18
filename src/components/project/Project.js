@@ -42,7 +42,7 @@ class Project extends Component {
                     className='project-logo-container'
                     data-tip data-for={project.name}>
                     <img src={project.logo} alt={project.name}/>
-                    <a href="#">See details</a>
+                    <p>See details</p>
                 </div>
 
                 <Modal

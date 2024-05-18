@@ -21,10 +21,11 @@
 .project-logo-container:hover > img {
     box-shadow: rgb(0 0 0 / 50%) 0px 4px 6px;
 }
-.project-logo-container > a {
+.project-logo-container > p {
     margin-top: 0.3125rem;
+    color: #007bff;
 }
-.project-logo-container:hover > a {
+.project-logo-container:hover > p {
     text-decoration: underline;
 }
 
