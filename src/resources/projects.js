@@ -1,6 +1,7 @@
 import {ProjectStackType} from "../components/projectStack/ProjectStack";
+import {mmoment} from "../helpers/timeHelper";
+
 import React from 'react';
-const moment = require('moment')
 
 const ProjectStatus = {
     BETA: {
@@ -52,8 +53,8 @@ export const projects = [
                 description: ``
             },
         ],
-        from: moment('2019-11-06'),
-        to: moment('2021-06-01'),
+        from: mmoment('2019-11-06'),
+        to: mmoment('2021-06-01'),
         photos: [
             {
                 title: {
@@ -155,8 +156,8 @@ export const projects = [
                 description: ``
             },
         ],
-        from: moment('2019-1-18'),
-        to: moment('2019-3-21'),
+        from: mmoment('2019-1-18'),
+        to: mmoment('2019-3-21'),
         photos: [
             {
                 title: ``,
@@ -244,8 +245,8 @@ export const projects = [
                 description: ``
             }
         ],
-        from: moment('2018-4-9'),
-        to: moment('2019-2-12'),
+        from: mmoment('2018-4-9'),
+        to: mmoment('2019-2-12'),
         photos: [
             {
                 title: {
@@ -377,8 +378,8 @@ export const projects = [
             name: 'Backend developer',
             description: ``
         }],
-        from: moment('2018-11-01'),
-        to: moment('2019-05-01'),
+        from: mmoment('2018-11-01'),
+        to: mmoment('2019-05-01'),
         photos: [
             {
                 title: {
@@ -467,8 +468,8 @@ export const projects = [
             name: 'Backend developer',
             description: ``
         }],
-        from: moment('2018-09-14'),
-        to: moment('2019-4-4'),
+        from: mmoment('2018-09-14'),
+        to: mmoment('2019-4-4'),
         photos: [
             {
                 title: {
@@ -630,8 +631,8 @@ export const projects = [
             name: 'Backend developer',
             description: ``
         }],
-        from: moment('2017-9-9'),
-        to: moment('2018-4-1'),
+        from: mmoment('2017-9-9'),
+        to: mmoment('2018-4-1'),
         photos: [
             {
                 title: {
@@ -824,8 +825,8 @@ export const projects = [
     //         name: ``,
     //         description: ``
     //     }],
-    //     from: moment('2018-4-9'),
-    //     to: moment('2018-4-9'),
+    //     from: mmoment('2018-4-9'),
+    //     to: mmoment('2018-4-9'),
     //     photos: [
     //         {
     //             title: {

@@ -9,7 +9,7 @@ import {projects} from "./resources/projects";
 import {skillGroups} from "./resources/skills";
 import {Avatar} from "./components/avatar/Avatar";
 import {getLocalizedValue} from "./helpers/languageHelper";
-const moment = require('moment')
+import {mmoment} from "./helpers/timeHelper";
 
 
 const me = {
@@ -33,8 +33,8 @@ const me = {
             _vi: 'Đại học Khoa học Tự nhiên (Đại học Quốc gia Thành phố Hồ Chí Minh)',
         },
         from: {
-            _en: moment('2012-09-01').format('MMM-YYYY'),
-            _vi: moment('2012-09-01').format('MM/YYYY'),
+            _en: mmoment('2012-09-01').format('MMM-YYYY'),
+            _vi: mmoment('2012-09-01').format('MM/YYYY'),
         },
         degree: {
             _en: 'B.S Software Engineering',
@@ -44,8 +44,8 @@ const me = {
     exps: [{
         title: 'Software Engineer & Senior Software Engineer, Quod AI',
         duration: {
-            from: moment('2019-11-06'),
-            to: moment('2021-06-01'),
+            from: mmoment('2019-11-06'),
+            to: mmoment('2021-06-01'),
         },
         descriptions: [
             'Created QuodAI web for users with ReactJS & NodeJS with big database underneath.',
@@ -60,8 +60,8 @@ const me = {
     {
         title: 'Software Engineer, Rockship',
         duration: {
-            from: moment('2017-09-09'),
-            to: moment('2019-03-21'),
+            from: mmoment('2017-09-09'),
+            to: mmoment('2019-03-21'),
         },
         descriptions: [
             'Created backend services with NodeJS & Python-Flask.',
@@ -72,8 +72,8 @@ const me = {
     {
         title: 'Intern & Software Engineer, Fsoft',
         duration: {
-            from: moment('2016-01-01'),
-            to: moment('2017-02-01'),
+            from: mmoment('2016-01-01'),
+            to: mmoment('2017-02-01'),
         },
         descriptions: [
             'Mantained an Android app for comics & manga reading platform - Shonen Jump',
