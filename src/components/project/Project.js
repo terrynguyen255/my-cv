@@ -48,7 +48,7 @@ class Project extends Component {
                 <Modal
                     isOpen={this.state.detailOpened}
                     toggle={this.toggleDetailDialog}
-                    className='modal-lg modal-dialog-custom'
+                    className='modal-xl modal-dialog-custom'
                 >
                     <ModalHeader toggle={this.toggleDetailDialog} className="modal-header-custom">
                         <div className='row'>
