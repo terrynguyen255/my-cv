@@ -53,7 +53,7 @@ const me = {
             'Developed a micro-services system to process data in CRM industry.',
             'Managed database migration.',
             'Managed deployment & scalability.',
-            'Integrated CRM platforms: Salesforces, Hubspot, Marketo, .etc.',
+            'Integrated CRM platforms: Salesforces, Hubspot, Marketo, etc.',
             'Improved systems with short-term & long-term solutions.',
             'Developed & maintained knowledge wiki for the company to reduce training effort.',
             'Supported & trained team members.',
