@@ -8,6 +8,7 @@ import Project from "./components/project/Project";
 import {projects} from "./resources/projects";
 import {skillGroups} from "./resources/skills";
 import {Avatar} from "./components/avatar/Avatar";
+import ExpItem from "./components/ExpItem/ExpItem";
 import {getLocalizedValue} from "./helpers/languageHelper";
 import {mmoment} from "./helpers/timeHelper";
 
@@ -45,7 +46,7 @@ const me = {
         title: 'Tech Lead & Senior Software Engineer, FunnelBeam',
         duration: {
             from: mmoment('2021-10-19'),
-            to: mmoment(),
+            to: undefined,
         },
         descriptions: [
             'Developed Admin dashboard for back-office tasks.',
@@ -224,26 +225,7 @@ class App extends Component {
                     {
                         me.exps.map((exp, idx) => (
                             <div className="col-12 section-content" key={idx} style={{paddingLeft: '2rem'}}>
-                                <h5>
-                                    <b>{getLocalizedValue(exp.title, i18n)}</b>&nbsp;
-                                    (
-                                        {exp.duration.from.format(t('MONTH_FORMAT'))}
-                                        &nbsp;-&nbsp;
-                                        {exp.duration.to.format(t('MONTH_FORMAT'))}
-                                    )
-                                </h5>
-                                <div>
-                                    <ul>
-                                        {
-                                            exp.descriptions.map((des, idx) => (
-                                                <li key={idx}>
-                                                    {getLocalizedValue(des, i18n)}
-                                                </li>
-                                            ))
-                                        }
-                                    </ul>
-                                    
-                                </div>
+                                <ExpItem exp={exp}/>
                             </div>
                         ))
                     }
