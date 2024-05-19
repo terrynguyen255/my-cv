@@ -34,8 +34,8 @@ const me = {
             _vi: 'Đại học Khoa học Tự nhiên (Đại học Quốc gia Thành phố Hồ Chí Minh)',
         },
         from: {
-            _en: mmoment('2012-09-01').format('MMM-YYYY'),
-            _vi: mmoment('2012-09-01').format('MM/YYYY'),
+            _en: mmoment('2012-09-01').format('YYYY'),
+            _vi: mmoment('2012-09-01').format('YYYY'),
         },
         degree: {
             _en: 'B.S Software Engineering',
