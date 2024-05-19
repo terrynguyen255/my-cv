@@ -38,7 +38,7 @@ const me = {
             _vi: mmoment('2012-09-01').format('YYYY'),
         },
         degree: {
-            _en: 'B.S Software Engineering',
+            _en: 'B.S in Software Engineering',
             _vi: 'Cử nhân',
         },
     }],
