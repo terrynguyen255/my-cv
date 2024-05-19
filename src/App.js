@@ -42,7 +42,7 @@ const me = {
         },
     }],
     exps: [{
-        title: 'Software Engineer & Senior Software Engineer, Quod AI',
+        title: 'Senior Software Engineer, Quod AI',
         duration: {
             from: mmoment('2019-11-06'),
             to: mmoment('2021-06-01'),
@@ -53,8 +53,6 @@ const me = {
             'Powered searching with Elasticsearch.',
             'Managed database migration.',
             'Integrated version-control platforms such as Github, Gitlab & Bitbucket into the systems.',
-            'Quickly responed to user issues and bug reports. Improved systems with short-term & long-term solutions.',
-            'Questioned & analyzed about user needs to bring the best values in each deliveries.',
         ]
     },
     {
