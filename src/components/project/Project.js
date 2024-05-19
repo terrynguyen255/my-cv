@@ -70,7 +70,7 @@ class Project extends Component {
                         </div>
                     </ModalHeader>
                     <ModalBody>
-                        <p className='project-about'><b>{t('LABEL_ABOUT')}:</b> {getLocalizedValue(project.about, i18n)}</p>
+                        <div className='project-about'><b>{t('LABEL_ABOUT')}:</b> {getLocalizedValue(project.about, i18n)}</div>
                         <p><b>{t('LABEL_TEAM_SIZE')}:</b> {project.teamSize} {t('MEMBERS')}</p>
                         <p><b>{t('LABEL_STATUS')}:</b> {getLocalizedValue(project.status, i18n)}</p>
                         <p><b>{t('LABEL_STACKS')}:</b></p>
