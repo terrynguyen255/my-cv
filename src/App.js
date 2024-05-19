@@ -42,6 +42,23 @@ const me = {
         },
     }],
     exps: [{
+        title: 'Tech Lead & Senior Software Engineer, FunnelBeam',
+        duration: {
+            from: mmoment('2021-10-19'),
+            to: mmoment(),
+        },
+        descriptions: [
+            'Developed Admin dashboard for back-office tasks.',
+            'Developed a micro-services system to process data in CRM industry.',
+            'Managed database migration.',
+            'Managed deployment & scalability.',
+            'Integrated CRM platforms: Salesforces, Hubspot, Marketo, .etc.',
+            'Improved systems with short-term & long-term solutions.',
+            'Developed & maintained knowledge wiki for the company to reduce training effort.',
+            'Supported & trained team members.',
+        ]
+    },
+    {
         title: 'Senior Software Engineer, Quod AI',
         duration: {
             from: mmoment('2019-11-06'),

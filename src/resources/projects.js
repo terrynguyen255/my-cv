@@ -16,6 +16,42 @@ const ProjectStatus = {
 
 export const projects = [
     {
+        name: `FunnelBeam`,
+        logo: `${process.env.PUBLIC_URL}/images/project-funnelbeam-logo.png`,
+        owner: `FunnelBeam`,
+        about: {
+            _en: (
+                <div>
+                    <p>FunnelBeam is a B2B service to help enterprises access their potential customers easier, faster &amp; more focused.</p>
+                    <p>FunnelBeam helps enterprises know their potential customers from just minimal information.</p>
+                    <p>FunnelBeam helps enterprises design their marketing campaigns better by providing customized info to match the campaigns' targets best.</p>
+                    <p>FunnelBeam has a resource of 20M companies to recommend potential customers for enterprises to target at</p>
+                </div>
+            ),
+            _vi: ``,
+        },
+        status: ProjectStatus.PRODUCTION,
+        stacks: [
+            ProjectStackType.PYTHON,
+            ProjectStackType.REACT,
+            ProjectStackType.MY_SQL,
+            ProjectStackType.MONGODB,
+            ProjectStackType.DOCKER,
+            ProjectStackType.KUBERNETES,
+            ProjectStackType.SALESFORCE,
+            ProjectStackType.POSTMAN,
+            ProjectStackType.SLACK,
+        ],
+        teamSize: 8, // 3 data engineers + 3 senior software engineers + 1 QA + 1 PM
+        myRoles: [{
+            name: `Tech lead`,
+            description: ``
+        }],
+        from: mmoment('2021-10-19'),
+        to: undefined,
+        photos: [],
+    },
+    {
         name: 'QUOD AI',
         logo: `${process.env.PUBLIC_URL}/images/project-quodai-logo.png`,
         owner: 'QuodAI Pte',

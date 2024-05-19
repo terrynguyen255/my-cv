@@ -24,6 +24,10 @@ export const ProjectStackType = {
         name: 'MySQL',
         logo: `${process.env.PUBLIC_URL}/images/stack-mysql.png`,
     },
+    MONGODB: {
+        name: 'MongoDB',
+        logo: `${process.env.PUBLIC_URL}/images/stack-mongodb.png`,
+    },
     POSGRESQL: {
         name: 'PosgreSQL',
         logo: `${process.env.PUBLIC_URL}/images/stack-posgresql.png`,
@@ -76,6 +80,10 @@ export const ProjectStackType = {
         name: 'Docker',
         logo: `${process.env.PUBLIC_URL}/images/stack-docker.jpg`,
     },
+    KUBERNETES: {
+        name: 'Kubernetes',
+        logo: `${process.env.PUBLIC_URL}/images/stack-kubernetes.png`,
+    },
     KILLBILL: {
         name: 'Kill Bill',
         logo: `${process.env.PUBLIC_URL}/images/stack-killbill.png`,
@@ -115,6 +123,10 @@ export const ProjectStackType = {
     STRIPE_CONNECT: {
         name: 'Stripe Connect',
         logo: `${process.env.PUBLIC_URL}/images/stack-stripeConnect.svg`,
+    },
+    SALESFORCE: {
+        name: 'Salesforce',
+        logo: `${process.env.PUBLIC_URL}/images/stack-salesforce.png`,
     },
     // xxx: {
     //     name: '',
