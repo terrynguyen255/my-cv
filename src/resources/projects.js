@@ -22,10 +22,9 @@ export const projects = [
         about: {
             _en: (
                 <div>
-                    <p>FunnelBeam is a B2B service to help enterprises access their potential customers easier, faster &amp; more focused.</p>
-                    <p>FunnelBeam helps enterprises know their potential customers from just minimal information.</p>
-                    <p>FunnelBeam helps enterprises design their marketing campaigns better by providing customized info to match the campaigns' targets best.</p>
-                    <p>FunnelBeam has a resource of 20M companies to recommend potential customers for enterprises to target at</p>
+                    <p>FunnelBeam is a B2B service to help enterprises access their potential customers easier, faster &amp; more focused to design better marketing campaigns.</p>
+                    <p>FunnelBeam has a resource of 20M companies to recommend potential customers for enterprises to target at.</p>
+                    <p>FunnelBeam&apos;s customers are Unity, Mulesoft, Copado, InfluxData, Qatalog, etc.</p>
                 </div>
             ),
             _vi: ``,
@@ -49,7 +48,29 @@ export const projects = [
         }],
         from: mmoment('2021-10-19'),
         to: undefined,
-        photos: [],
+        photos: [
+            {
+                title: {
+                    _en: 'Enrich a lead (person) from minimal information',
+                    _vi: 'Tìm lead từ những thông tin ít ỏi',
+                },
+                subTitle: {
+                    _en: `from sole name or phone or email`,
+                    _vi: `từ mỗi tên, hoặc SĐT, hoặc email`,
+                },
+                src: `${process.env.PUBLIC_URL}/images/project-funnelbeam-photo-1.jpg`
+            }, {
+                title: {
+                    _en: 'Enrich an account (company) from minimal information',
+                    _vi: 'Tìm account từ những thông tin ít ỏi',
+                },
+                subTitle: {
+                    _en: `from sole name or website`,
+                    _vi: `từ mỗi tên, hoặc website`,
+                },
+                src: `${process.env.PUBLIC_URL}/images/project-funnelbeam-photo-2.jpg`
+            }
+        ],
     },
     {
         name: 'QUOD AI',
