@@ -26,8 +26,9 @@ class Project extends Component {
     render() {
         const { t, i18n } = this.props;
         const project = this.props.project
-        const durationMonths = project.to.diff(project.from, 'months')
-        const projectToDiffToday = moment().diff(project.to, 'days')
+        const lastTo = project.to || moment()
+        const durationMonths = lastTo.diff(project.from, 'months')
+        const projectToDiffToday = moment().diff(lastTo, 'days')
         const durationFrom = project.from.format(t('DATE_FORMAT'))
         const durationTo =  !projectToDiffToday ? t('PRESENT') : project.to.format(t('DATE_FORMAT'))
         const durationRange = `(${durationFrom} - ${durationTo})`
